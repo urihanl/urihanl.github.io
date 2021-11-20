@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.84.1" />
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [["$","$"],["\\(","\\)"]],
+      displayMath: [["$$","$$"],["\\[","\\]"]],
+      ignoreClass: "nostem|nolatexmath"
+    },
+    asciimath2jax: {
+      delimiters: [["\\$","\\$"],],
+      ignoreClass: "nostem|noasciimath"
+    }
+  });
+</script>
+<script type="text/javascript" async  src="https://example.com/mathjax/MathJax.js?config=AM_CHTML"></script>
+<script type="text/javascript" async  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"> </script>
+
+
+
+<script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
+<link rel="stylesheet" href="urihanl/css/prism.css">
+<link rel="stylesheet" href="urihanl/css/doc.css">
+<link rel="stylesheet" href="urihanl/css/var.css">
+<script src="urihanl/js/prism.js"></script>
+
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/urihanl/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/urihanl/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/urihanl/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/urihanl/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/urihanl/favicons/android-192x192.png" sizes="192x192">
+
+<title>모바일 서비스 시 보안 활동 | 공부노트</title>
+
+
+  <meta name="description" content="모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가? 
+">
+<meta property="og:title" content="모바일 서비스 시 보안 활동" />
+<meta property="og:description" content="모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가? 
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="urihanl/docs/mobile_security/part1/chap1.mobile_security/1.1.common/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-10-11T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-10-11T00:00:00&#43;00:00" /><meta property="og:site_name" content="공부노트" />
+
+<meta itemprop="name" content="모바일 서비스 시 보안 활동">
+<meta itemprop="description" content="모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가? 
+"><meta itemprop="datePublished" content="2020-10-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-10-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1589">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="모바일 서비스 시 보안 활동"/>
+<meta name="twitter:description" content="모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가? 
+"/>
+
+
+
+
+<link rel="preload" href="/urihanl/scss/main.min.8c73f1de43658e3520db8dc28c27baf8451a82fa7e1d189cca8a6e259b61f275.css" as="style">
+<link href="/urihanl/scss/main.min.8c73f1de43658e3520db8dc28c27baf8451a82fa7e1d189cca8a6e259b61f275.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="/urihanl/css/prism.css"/>
+
+
+
+
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="urihanl/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">공부노트</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="urihanl/docs/" ><i class='fas fa-book'></i><span class="active">공부노트</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="urihanl/blog/" ><i class='fas fa-users'></i><span>블로그</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="urihanl/community/" ><i class='fas fa-users'></i><span>이야기</span></a>
+			</li>
+			
+			
+			
+			<li class="nav-item dropdown mr-4 d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	아빠
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="urihanl/dd/">또니</a>
+	
+	<a class="dropdown-item" href="urihanl/jj/">죠조</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"></div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	아빠
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="urihanl/dd/">또니</a>
+	
+	<a class="dropdown-item" href="urihanl/jj/">죠조</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-urihanldocs-li">
+  <a href="urihanl/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-urihanldocs"><span class="">공부노트</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-urihanldocsmobile_security-li">
+  <a href="urihanl/docs/mobile_security/" title="모바일 보안" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_security"><span class="">모바일보안</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-urihanldocsmobile_securitypart1-li">
+  <a href="urihanl/docs/mobile_security/part1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1"><span class="">모바일 보안 개요</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-urihanldocsmobile_securitypart1chap1mobile_security-li">
+  <a href="urihanl/docs/mobile_security/part1/chap1.mobile_security/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap1mobile_security"><span class="">모바일 보안 일반</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-urihanldocsmobile_securitypart1chap1mobile_security11common-li">
+  <a href="urihanl/docs/mobile_security/part1/chap1.mobile_security/1.1.common/" title="모바일 서비스 시 보안 활동" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitypart1chap1mobile_security11common"><span class="td-sidebar-nav-active-item">모바일 보안</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsmobile_securitypart1chap2technology-li">
+  <a href="urihanl/docs/mobile_security/part1/chap2.technology/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap2technology"><span class="">정보보호기술</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart1chap2technology21architecture-li">
+  <a href="urihanl/docs/mobile_security/part1/chap2.technology/2.1.architecture/" title="보안 아키텍처(ITU-T X.805)" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap2technology21architecture"><span class="">보안 아키텍처</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-urihanldocsmobile_securitypart1chap2technology22crypto-li">
+  <a href="urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap2technology22crypto"><span class="">암호 기술</span></a>
+  <ul class="ul-5 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart1chap2technology22crypto2-2-1target-li">
+  <a href="urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/2-2-1.target/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitypart1chap2technology22crypto2-2-1target"><span class="">암호화 대상</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitypart1chap3-li">
+  <a href="urihanl/docs/mobile_security/part1/chap3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap3"><span class="">모바일 운영체제 및 보안</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitypart1chap4-li">
+  <a href="urihanl/docs/mobile_security/part1/chap4/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart1chap4"><span class="">모바일 보안 기술</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsmobile_securitypart2-li">
+  <a href="urihanl/docs/mobile_security/part2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart2"><span class="">보안 규제 및 가이드라인</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart2chap5-li">
+  <a href="urihanl/docs/mobile_security/part2/chap5/" title="IT 컴플라이언스 " class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart2chap5"><span class="">IT 컴플라이언스</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart2chap6-li">
+  <a href="urihanl/docs/mobile_security/part2/chap6/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart2chap6"><span class="">정보보호 관리체계 구축 </span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsmobile_securitypart3-li">
+  <a href="urihanl/docs/mobile_security/part3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3"><span class="">모바일 보안 솔루션 </span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap7-li">
+  <a href="urihanl/docs/mobile_security/part3/chap7/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap7"><span class="">모바일 서비스 보안 구축</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap8-li">
+  <a href="urihanl/docs/mobile_security/part3/chap8/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap8"><span class="">앱 위/변조방지 및 난독화</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap9-li">
+  <a href="urihanl/docs/mobile_security/part3/chap9/" title="시큐어 코딩(Secure Coding)" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap9"><span class="">시큐어 코딩(Secure Coding) </span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap10-li">
+  <a href="urihanl/docs/mobile_security/part3/chap10/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap10"><span class="">모바일 보안 관리 (EMM)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap11-li">
+  <a href="urihanl/docs/mobile_security/part3/chap11/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap11"><span class="">보안 키패드</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap12-li">
+  <a href="urihanl/docs/mobile_security/part3/chap12/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap12"><span class="">모바일 OTP</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap13-li">
+  <a href="urihanl/docs/mobile_security/part3/chap13/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap13"><span class="">모바일 백신 </span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap14-li">
+  <a href="urihanl/docs/mobile_security/part3/chap14/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap14"><span class="">모바일 가상화 솔루션  </span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap15-li">
+  <a href="urihanl/docs/mobile_security/part3/chap15/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap15"><span class="">바이오 인증</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsmobile_securitypart3chap16-li">
+  <a href="urihanl/docs/mobile_security/part3/chap16/" title="취약점 진단 컨설팅   " class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsmobile_securitypart3chap16"><span class="">취약점 진단 컨설팅 </span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitysupplement1owasp-li">
+  <a href="urihanl/docs/mobile_security/supplement/1.owasp/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitysupplement1owasp"><span class="">OWASP Mobile Top 10 Risks </span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitysupplement2efinance-li">
+  <a href="urihanl/docs/mobile_security/supplement/2.efinance/" title="스마트폰 전자금융서비스 보안가이드" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitysupplement2efinance"><span class="">전자금융서비스 보안가이드</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitysupplement3smartphone-li">
+  <a href="urihanl/docs/mobile_security/supplement/3.smartphone/" title="스마트폰 전자금융서비스 안전 대책" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitysupplement3smartphone"><span class="">전자금융서비스 안전 대책</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-urihanldocsmobile_securitysupplement4pcidss-li">
+  <a href="urihanl/docs/mobile_security/supplement/4.pcidss/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsmobile_securitysupplement4pcidss"><span class="">PCI DSS 표준</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsh_languages-li">
+  <a href="urihanl/docs/h_languages/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languages"><span class="">사람말</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languageskorea-li">
+  <a href="urihanl/docs/h_languages/korea/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languageskorea"><span class="">한국어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesphiliphines-li">
+  <a href="urihanl/docs/h_languages/philiphines/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesphiliphines"><span class="">따갈로그</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languageslatin-li">
+  <a href="urihanl/docs/h_languages/latin/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languageslatin"><span class="">라틴어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesrussia-li">
+  <a href="urihanl/docs/h_languages/russia/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesrussia"><span class="">러시아어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesmanchu-li">
+  <a href="urihanl/docs/h_languages/manchu/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesmanchu"><span class="">만주어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesmyanmar-li">
+  <a href="urihanl/docs/h_languages/myanmar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesmyanmar"><span class="">미얀마어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesgeorgia-li">
+  <a href="urihanl/docs/h_languages/georgia/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesgeorgia"><span class="">수메르어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesswahili-li">
+  <a href="urihanl/docs/h_languages/swahili/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesswahili"><span class="">스와힐리어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesspain-li">
+  <a href="urihanl/docs/h_languages/spain/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesspain"><span class="">스페인어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesainu-li">
+  <a href="urihanl/docs/h_languages/ainu/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesainu"><span class="">아이누어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesindonesia-li">
+  <a href="urihanl/docs/h_languages/indonesia/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesindonesia"><span class="">인도네시아어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesjapan-li">
+  <a href="urihanl/docs/h_languages/japan/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesjapan"><span class="">일본어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagessumer-li">
+  <a href="urihanl/docs/h_languages/sumer/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagessumer"><span class="">조지아어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languageschina-li">
+  <a href="urihanl/docs/h_languages/china/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languageschina"><span class="">중국어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagescambodia-li">
+  <a href="urihanl/docs/h_languages/cambodia/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagescambodia"><span class="">캄보디아어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesthai-li">
+  <a href="urihanl/docs/h_languages/thai/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesthai"><span class="">태국어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languagesturkey-li">
+  <a href="urihanl/docs/h_languages/turkey/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languagesturkey"><span class="">터키어</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsh_languageshanmun-li">
+  <a href="urihanl/docs/h_languages/hanmun/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsh_languageshanmun"><span class="">한문</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsp_languages-li">
+  <a href="urihanl/docs/p_languages/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languages"><span class="">프로그래밍언어</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagespython-li">
+  <a href="urihanl/docs/p_languages/python/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagespython"><span class="">python</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesscala-li">
+  <a href="urihanl/docs/p_languages/scala/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesscala"><span class="">asciidoc</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesc-li">
+  <a href="urihanl/docs/p_languages/c/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesc"><span class="">C</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesc_sharp-li">
+  <a href="urihanl/docs/p_languages/c_sharp/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesc_sharp"><span class="">C#</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagescss-li">
+  <a href="urihanl/docs/p_languages/css/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagescss"><span class="">CSS</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languageselixir-li">
+  <a href="urihanl/docs/p_languages/elixir/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languageselixir"><span class="">elixir</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesf_sharp-li">
+  <a href="urihanl/docs/p_languages/f_sharp/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesf_sharp"><span class="">F#</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesgolang-li">
+  <a href="urihanl/docs/p_languages/golang/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesgolang"><span class="">go</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languageshtml-li">
+  <a href="urihanl/docs/p_languages/html/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languageshtml"><span class="">HTML</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesjavascript-li">
+  <a href="urihanl/docs/p_languages/javascript/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesjavascript"><span class="">javascript</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesjulia-li">
+  <a href="urihanl/docs/p_languages/julia/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesjulia"><span class="">julia</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesoctave-li">
+  <a href="urihanl/docs/p_languages/octave/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesoctave"><span class="">octave</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesmathematica-li">
+  <a href="urihanl/docs/p_languages/mathematica/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsp_languagesmathematica"><span class="">Wolfram language</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsp_languagesminea-li">
+  <a href="urihanl/docs/p_languages/mine/a/" title="테스트입니다." class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-urihanldocsp_languagesminea"><span class="">asciidoc테스트</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-urihanldocsnotes-li">
+  <a href="urihanl/docs/notes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsnotes"><span class="">공부 노트</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsnotesasciidoc-li">
+  <a href="urihanl/docs/notes/asciidoc/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsnotesasciidoc"><span class="">asciidoc</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-urihanldocsnotesmarkdown-li">
+  <a href="urihanl/docs/notes/markdown/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-urihanldocsnotesmarkdown"><span class="">markdown</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            
+
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#금융권-모바일-서비스-종류-및-구현">금융권 모바일 서비스 종류 및 구현</a></li>
+    <li><a href="#모바일-금융-서비스-공격-유형3">모바일 금융 서비스 공격 유형</a>
+      <ul>
+        <li><a href="#대표적-보안-사건-사고-사례">대표적 보안 사건, 사고 사례</a></li>
+        <li><a href="#공격-유형">공격 유형</a></li>
+      </ul>
+    </li>
+    <li><a href="#모바일-금융-서비스-보안">모바일 금융 서비스 보안</a>
+      <ul>
+        <li><a href="#안전성-확보-조치-방안">안전성 확보 조치 방안</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+
+
+
+            
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="urihanl/tags/asd/" data-taxonomy-term="asd"><span class="taxonomy-label">asd</span><span class="taxonomy-count">4</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="urihanl/docs/">공부노트</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="urihanl/docs/mobile_security/">모바일보안</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="urihanl/docs/mobile_security/part1/">모바일 보안 개요</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="urihanl/docs/mobile_security/part1/chap1.mobile_security/">모바일 보안 일반</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="urihanl/docs/mobile_security/part1/chap1.mobile_security/1.1.common/">모바일 보안</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="doc">
+<div class="td-content">
+	<h1>모바일 서비스 시 보안 활동</h1>
+	<div class="lead">모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가?</div>
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	<p>문제를 해결하기 위해서는 문제 정의에서부터 출발을 하여 개별 문제에 대한 해결 방안을 도출하는 식으로 차례대로 접근하는 것이 좋습니다.</p>
+<p>모바일 서비스를 기획한다고 할 때 무엇을 보호해야 하는가? 에 대한 질문에서 시작해야 할 것입니다. 아마도 고객의 정보, 특히 개인식별 정보, 결제 기능이 있다면 개인 신용정보, 결제 정보 등이 그 대상이 될 것입니다. 이러한 것을 정보자산 식별이라 합니다. 보호해야 할 정보자산의 유형, 내용, 생명주기, 관리 현황 등을 파악하는 것으로부터 정보보호 체계 구축의 시발점이 됩니다.</p>
+<p>서비스 아키텍처 설계 시 대부분 클라이언트, 서버 구조가 됩니다. 그 사이에 네트워크 계층이 존재하여 정보를 양자 사이에 주고 받게 됩니다. 정보는 주로 서버에 저장되며, 특히 데이터베이스에 영속성을 가지고 저장되고, 클라이언트, 즉 스마트폰에 깔린 앱에서 그 정보를 요청하고 수신하여 화면에 보여주거나 저장하게 됩니다.</p>
+<p>일련의 데이터의 흐름을 손으로 또는 문서 도구로 정리해 보는 것이 필요합니다. 아마도 서비스 설계 시 한 번쯤 이 과정을 거쳤을 것이며 그렇지 않다면 지금이라도 명확히 해 두는 것이 문제 해결에 도움이 될 것입니다.</p>
+<p>이렇게 보호 대상에 대한 식별이 이루어졌으면 어떻게 보호해야 하는가? 이에 대한 답은 이미 보안전문 기관이나 컨설턴트에 의해 오랫동안 고민되어 왔고 공통 분모가 되는 내용을 취합하여 온라인 상에 제시된 것이 있습니다.</p>
+<p>바로 OWASP mobile project<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>라는 것으로 정리되어 전세계 모바일 앱 개발 시 보안을 고려해야 할 항목에 대한 지침을 제시합니다. 원래는 웹 어플리케이션 보안을 위한 프로젝트로 시작되었지만 다양한 분야(모바일, IoT, 클라우드 등)로 확대되어 여러 분야에 대한 취약점 보완을 위한 지침서로서의 역할을 다하고 있습니다.</p>
+<p>모바일 앱 위험요소에 대한 상위 10개 항목과 설계 및 개발 시 참고할 수 있는 체크리스트를 제공합니다. 이외에도 모바일 보안과 관련한 다양한 정보와 외부 참고 링크를 제공하여 보안관련 업무 시 유용하게 활용할 수 있습니다.</p>
+<p>다음으로 설계, 개발, 시험, 운영 단계에 이르는 일련의 라이프 사이클 과정에서 보안 활동에 대해 살펴봅니다.</p>
+<p>설계 단계에서는 현실적으로 대부분 보안을 고려하지 않는 경우가 많습니다. 비용, 인력, 일정 면에서 자원을 할당하기에 소규모 사업자의 경우 만만치 않기 때문입니다. 보안을 고려하지 않고 개발이 이루어진 경우는 출시 전 시험 단계에서 보안 점검을 진행하게 되는데, 이 때 수정이 상당수 필요하게 되는 경우가 많이 발생합니다. 심각한 문제점이 발견된 경우에는 이를 고치기 위해 사실상 출시가 미루어 지거나 잠재적인 보안위험을 떠안고 출시하게 됩니다.</p>
+<p>설계 단계에서 간과하는 대표적인 것으로는 인증과 암호화 통신에 대한 설계가 잘못된 경우가 많습니다. API 인증 및 권한 확인 과정에서 우회 경로가 많이 발견되는 경우가 발생하는데, 인증 API를 잘못 사용하거나 인증을 불안전하게 설계하는 경우입니다. 또한 암호화 통신의 경우 더 이상 사용하지 말아야 할 취약한 알고리즘을 사용하거나 암호화 키 교환을 안전하지 않은 방식으로 설계하여 암호화 채널을 쉽게 뚫리는 경우가 대표적입니다.</p>
+<p>개발 단계에서는 소스코드 취약점 제거가 대표적인 보안 활동입니다. 버퍼 오버플로우(buffer overflow), 인젝션(Injection attack) 공격 등에 취약하게 개발한 경우 공격자 입장에서도 도구를 사용하여 쉽게 발견할 수 있기 때문에 보안 위협에 노출됩니다. 이외에도 개발 시 로그를 출력하여 디버깅하는 것을 그대로 출시하여 중요한 정보를 노출시키거나 역공학을 통해 노출되는 소스코드 내 하드 코딩 된 중요 정보가 있거나 숨겨진 백도어가 존재하여 출시 후에 뒤늦게 발견되어 위험에 노출되는 경우가 있습니다.</p>
+<p>모바일 앱의 경우에는 웹 서비스와 다르게 앱 내부 소스코드 자체가 노출되는 추가적인 보안 위협이 있습니다. 역공학에 의해 앱 자체의 소스코드가 노출되어 중요 정보나 로직이 노출되거나 플랫폼, 즉 운영체제가 루팅(rooting/jailbreak)되어 스마트폰 내의 정보를 유출하거나 다양한 공격 시도(예: 바이러스 설치)를 할 수 있는 보안위협이 존재합니다. 이러한 위협은 주로 솔루션을 도입하여 해결하는 것이 일반적입니다.
+시험 및 배포 단계에서는 출시하기 전에 모의 해킹 또는 침투테스트(Penetration Test)를 외부 전문가를 초청하여 보안성을 확인하는 작업을 진행하기도 합니다. 또는 이에 준하는 보안성 점검을 실시하는 것이 필요합니다. 실제 사용자 중심의 사용 시나리오를 바탕으로 발생할 수 있는 잠재적인 보안 취약점에 대한 발견이 목적이며, 이를 보완함으로써 일차적으로 안전한 서비스 출시가 가능하다고 하겠습니다.</p>
+<p>이렇게, 일련의 모바일 서비스 기획에서부터 출시에 이르기까지 보안과 관련된 활동이 필요한 사항을 언급해 보았습니다.</p>
+<p>이렇게 보안 활동은 출시 이후에 이루어지는 단발적인 활동이 아닌 처음부터 종료까지 지속적으로 경영자와 개발자 모두 참여하여야 제대로 역할을 다 할 수 있습니다.</p>
+<p>정보보호 기술에 대해 소개를 하기에 앞서 금융권 모바일 서비스의 경우에 어떠한 보안 위협 이슈가 있고, 이를 해결하기 위한 대응 조치를 하고 있는 지에 대해 간략히 살펴보고자 합니다. 금융권이 보안 규제가 가장 강한 편이므로 규제 준수를 위한 정보보호 활동이 비교적 모범적으로 운영되고 있으며, 가이드라인이 상당 부분 공통적인 사항이 많기 때문에 참조해 볼만하기 때문입니다.</p>
+<h2 id="금융권-모바일-서비스-종류-및-구현">금융권 모바일 서비스 종류 및 구현</h2>
+<p>근래에 금융 서비스는 점차 사용자 편의성 증대를 위해 경쟁적으로 모바일 플랫폼으로 기반으로 옮겨가고 있으며, 기존의 PC 기반 서비스와 함께 대체적으로 양쪽 플랫폼 모두 제공하는 것이 사실상 업계 원칙이 되어가고 있는 실정입니다.</p>
+<p>은행권의 경우 모바일 뱅킹, 증권사의 경우 MTS(Mobile Trading System), 카드사의 경우 앱 카드, 보험은 모바일 보험 등이 서비스로 제공되고 있습니다.</p>
+<p>통계 조사<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>에 따르면, 모바일 금융서비스(모바일 뱅킹, 간편 송금, 간편 결제, 앱 카드 등)은 주로 20~40대, 고소득 층이 이용한다고 합니다. 주로 모바일 뱅킹의 경우 계좌이체와 잔액 조회가 주로 이용되며, 비 대면 계좌 개설, ATM 현금인출 등에도 일부 사용률을 보여주고 있습니다. 또한 2015년 이후 모바일 뱅킹 서비스 이용 건수와 금액이 지속적으로 증가할 것으로 보고 있습니다.</p>
+<p>모바일 서비스를 구현하는 방법은 3가지로 분류할 수 있는데, 네이티브 앱, 웹 앱, 하이브리드 앱 등으로 구분됩니다.</p>
+<p>네이티브 앱 구현 방식의 경우, 스마트폰 운영체제에 적합하도록 개발되며, 안드로이드 폰의 경우 JAVA, 아이폰의 경우 Objective-C, Swift 언어를 이용하여 개발합니다. 네이티브 방식은 기존에는 유일한 구현 방식으로서 해당 플랫폼 사에서 제공하는 안전하고 최적화된 API를 사용하므로 속도가 상대적으로 빠르고 안정적인 반면에 신규 버전이 출시될 경우 이에 맞춰 추가 개발 작업이 요구됩니다.</p>
+<p>웹 앱 구현 방식은 스마트폰 웹 브라우저 상에서 실행되는 방식으로 기존의 PC 환경에서의 웹 브라우저 접속 앱과 거의 동일하다고 볼 수 있습니다. 기기 종류와 상관없이 동일한 앱으로 동작 가능하지만 속도가 상대적으로 느리고 프로그램 환경에 종속적인 단점이 있습니다.</p>
+<p>하이브리드 앱 구현 방식은 네이티브 앱, 웹 앱 구현 방식을 결합한 것으로 양 쪽의 장점을 취한 것이라고 할 수 있습니다. 내부 구현 측면에서는 단순 정보 제공 기능에 대해서는 웹 앱 구현 방식을 따르고, 중요 기능은 네이티브 앱 구현 방식으로 접근하여 성능과 유지보수 편의성을 모두 공략한 방식이라고 할 수 있습니다. 최근에는 하이브리드 앱 구현 방식이 대세가 되어가고 있습니다.</p>
+<h2 id="모바일-금융-서비스-공격-유형3">모바일 금융 서비스 공격 유형<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h2>
+<h3 id="대표적-보안-사건-사고-사례">대표적 보안 사건, 사고 사례</h3>
+<ul>
+<li>
+<p>부정 카드 결제 사건</p>
+<p>모바일 금융 서비스의 경우 금액적인 이익 편취 동기 부여가 강한 편이기 때문에 해킹 사건, 사고가 가장 많이 발생하는 편입니다.</p>
+<p>그 중 카드 결제 사건의 경우, 악성 링크를 통해 악성 코드를 배포하고 금융 소비자의 개인정보를 탈취하여 권한 없이 소비자의 카드 결제를 노리는 방식입니다.</p>
+<p><img src="../image001.png" alt="그림1" title="그림 1 부정 카드 결제 사건의 공격 시나리오"></p>
+</li>
+<li>
+<p>개인 정보 유출 사건</p>
+<p>현금 편취 사고와 더불어 많이 발생하는 것이 고객의 개인 정보를 유출하는 사고입니다. 비단 금융 서비스 뿐만 아니라 모바일 기반 일반 서비스의 경우에도 빈번히 발생하는 것으로, 개인 정보가 유출되는 경우 기업의 경우 대외적 신인도 하락과 피해 소송으로 인해 금전적 손실도 크게 발생하므로 파급효과가 큰 편입니다.</p>
+<p>대표적인 사건 시나리오는 보이스 피싱(Voice Phishing) 기법으로 피해자에게 악성 코드를 유포한 후에 해당 악성 코드를 이용하여 대부업체를 사칭하여 금전적 취득을 하는 방식입니다.</p>
+<p><img src="../image002.png" alt="그림2" title="그림 2 개인 정보 유출 사건의 공격 시나리오"></p>
+</li>
+</ul>
+<h3 id="공격-유형">공격 유형</h3>
+<ul>
+<li>
+<p>스미싱(Smishing) 공격</p>
+<p>최근 해킹 시도 중에 증가하는 유형 중의 하나입니다. 악성 코드가 포함된 문자(SMS) 등을 스마트폰 사용자에게 전달하고 해당 악성 코드를 사용자 스마트 폰에 설치하고 실행하여 부정 금융거래를 시도하는 공격 방식입니다.</p>
+<p>미리 입수 한 개인정보를 이용하여 일반 사용자에게 정상적인 문자로 속여 악성 코드를 은닉하여 전파하면, 선의의 사용자가 문자에 은닉된 악성 코드를 실행하도록 유도하여 금융 거래정보를 탈취하거나 부정 결제하는 기법입니다. 문자 메시지(SMS) 내에는 악성 링크를 포함하여 사용자가 링크를 누르면 해당 주소에 접속하여 악성 코드가 배포되어 설치됩니다.</p>
+<p>이에 대하여 해당 서비스 제공자는 금융 거래 시 백신 프로그램을 이용하여 안전성 여부를 검증하는 것이 필요하며, 일반 사용자도 의심스러운 문자나 메신저를 통해 앱을 설치하는 것을 주의해야 합니다.</p>
+</li>
+<li>
+<p>메신저 피싱(Messenger Phishing) 공격</p>
+<p>피싱(Phishing) 공격 중의 하나로서 이 경우에도 미리 입수한 개인정보로 사용자의 메신저 사용 권한을 획득하여, 로그인 후 등록된 메신저 친구를 대상으로 사기 메시지를 전송한 후 대포 통장으로 금품을 요구 후 갈취하는 방식입니다.</p>
+<p>이에 대하여 앞의 공격 방식과 동일하게 대응 조치가 필요하며, 개인 정보가 유출되는 것에 유의해야 합니다.</p>
+</li>
+<li>
+<p>파밍(Pharming) 공격</p>
+<p>피싱(Phishing) 방식 보다 진화한 방식으로 인터넷 주소를 변환하는 서버 주소를 변조하여 가짜 유해 사이트로 접속을 유도하는 공격 방식입니다.</p>
+<p>악성 코드 등을 이용하여 접속 사이트 이름 변환 서버의 주소를 변조합니다. (DNS 설정 변조) 일반 사용자는 정상 금융 사이트로 접속을 시도할 경우 DNS 변조로 해당 사이트가 아닌 공격자가 만든 악성 사이트에 접속하게 됩니다.</p>
+<p>이에 대해 서비스 제공자는 스마트폰에서 발생하는 이상 행위를 탐지하거나 도청 장치(Sniffing)를 탐지하는 솔루션을 적용하여 은행 거래의 이상 행위를 탐지하는 시스템으로 모니터링하고 차단하도록 노력해야 할 것입니다. (Anomaly Detection, Fraud Detection System)</p>
+</li>
+<li>
+<p>스마트폰 운영체제 해킹 공격</p>
+<p>스마트폰 운영체제(Android, iOS)의 관리자 권한을 획득하여 중요 정보를 권한 없이 조회하거나 이용하는 방법으로 대표적으로 Rooting, JailBreak (루팅/ 탈옥)으로 지칭하는 방식입니다.</p>
+<p>대부분은 익명 해커가 앱 마켓에 올린 루팅 앱을 다운로드 및 설치하여 자동으로 루팅 및 탈옥이 되는 방법입니다. 자의적 또는 타의적으로 설치된 경우 권한 상승 된 스마트폰을 이용하여, 정보를 유출하거나 기기를 불법으로 조작하는 방법으로 공격이 발생할 수 있습니다.</p>
+<p>이러한 공격에 대비하여 서비스 제공자는 스마트폰이 변조되었는 지 주요 기능 수행 전에 탐지하거나 차단해야 합니다. 이용자도 앱을 설치 할 때 불필요한 권한을 요구하는 지 꼼꼼히 확인하여 의심스러운 앱은 설치하지 않도록 주의하는 것이 필요합니다.</p>
+</li>
+<li>
+<p>금융 앱 위 변조 공격</p>
+<p>흔히 리패키징(Re-packaging) 공격으로 불리며, 시중에 배포된 금융 앱을 역 공학(Reverse Engineering)으로 분석하고, 인증을 우회하거나 정당하지 않은 결제가 가능하도록 변조하여 재 배포하는 방식입니다.</p>
+<p>이에 대하여 서비스 제공자는 앱 배포 시에 난독화된(Obfuscation) 형태로 배포하며, 앱 위 변조 방지 솔루션을 통해 주요 기능 수행 전에 위 변조 여부를 탐지하고 차단해야 합니다.</p>
+</li>
+<li>
+<p>금융 정보 탈취 공격</p>
+<p>스미싱과 같은 방법이나 메일이나 사설 앱스토어를 통해 배포된 악성 코드를 이용하여 사용자의 입력 정보를 감시하고 금융 정보를 탈취하는 방식입니다.</p>
+<p>이에 대하여 서비스 제공자는 주요 정보 입력 시 입력 정보를 암호화하여 처리하는 보안 키보드 솔루션을 적용하여 정보가 유출되는 것을 차단해야 합니다. 최근 금융 모바일 서비스의 경우 대부분 보안 키보드 솔루션이 적용되어 키보드 입력 시 키 배열이 임의적으로 재 배치된 것을 흔히 볼 수 있습니다.</p>
+</li>
+</ul>
+<h2 id="모바일-금융-서비스-보안">모바일 금융 서비스 보안</h2>
+<h3 id="안전성-확보-조치-방안">안전성 확보 조치 방안</h3>
+<p>앞서 언급한 모바일 서비스 앱 해킹 시도에 대해 자체 개발 또는 솔루션을 적용하여 대응하는 노력이 필요합니다. 이에 대해 금융권의 경우에는 대표적으로 몇 가지 사실 상 필수적으로 적용하는 안전성 확보 조치를 들 수 있습니다.</p>
+<p>각종 바이러스 및 멀웨어(Malware)를 차단하고 이용자의 정보를 외부에 전송하는 것을 막기 위한 것으로 백신 프로그램을 사용하며, 인증 시 이용자 신원 확인을 증명하기 위해 공인인증서 등의 PKI 기술을 사용하며, 계좌 비밀번호 등의 입력을 보호하기 위하여 보안 키보드를 적용하고, 금융거래 데이터를 보호하기 위해 앱 위 변조 방지 솔루션 등을 적용하도록 하고 있습니다.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.owasp.org/index.php/OWASP_Mobile_Security_Project">https://www.owasp.org/index.php/OWASP_Mobile_Security_Project</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>모바일 금융서비스 이용행태 조사결과, 한국은행, 2019.5&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>모바일 금융서비스의 최근 이슈 및 발전 방향, 한국은행, 2019.10&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+	
+	
+	
+</div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        
+        
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/urihanl/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/urihanl/js/main.min.9f372447e75ba0bca4f127760a0463c29605713e7577b853c15dcb25bda1f84f.js" integrity="sha256-nzckR&#43;dboLyk8Sd2CgRjwpYFcT51d7hTwV3LJb2h&#43;E8=" crossorigin="anonymous"></script>
+
+
+
+<script src='/urihanl/js/prism.js'></script>
+
+
+
+  </body>
+</html>

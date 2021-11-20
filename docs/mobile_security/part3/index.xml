@@ -1,0 +1,156 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>공부노트 – 모바일 보안 솔루션 </title>
+    <link>urihanl/docs/mobile_security/part3/</link>
+    <description>Recent content in 모바일 보안 솔루션  on 공부노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="urihanl/docs/mobile_security/part3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 모바일 서비스 보안 구축</title>
+      <link>urihanl/docs/mobile_security/part3/chap7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap7/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 앱 위/변조방지 및 난독화</title>
+      <link>urihanl/docs/mobile_security/part3/chap8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap8/</guid>
+      <description>
+        
+        
+        &lt;p&gt;소개하는 솔루션인 App Shields는 Two-way방식의 앱 및 OS 위 ∙ 변조 탐지 기능을 내제하고 있으며, 코드 난독화 및 암호화 기능을 제공함에 따라, 보안적 위협에 보다 적극적으로 대응이 가능한 솔루션입니다. 자세한 기술에 대한 소개는 4장 모바일 보안 기술 &amp;gt; 앱 난독화 및 앱 위/변조 탐지 기술을 참고하기 바랍니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 시큐어 코딩(Secure Coding)</title>
+      <link>urihanl/docs/mobile_security/part3/chap9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap9/</guid>
+      <description>
+        
+        
+        &lt;p&gt;이에 한국인터넷진흥원에서는 모바일 대민서비스 보안취약점 점검 가이드라인과 모바일 전자정부 서비스 앱 소스코드 검증 가이드라인을 발간하고 있으며, 해당 가이드라인에 준수하여 앱 서비스를 개발 및 보급함으로써, 모바일 대민서비스의 안전성 및 신뢰성 제고를 목표로 하고 있습니다.&lt;/p&gt;
+&lt;p&gt;소개하는 솔루션인 CODE Shield는 자동화된 시큐어 코딩 점검 솔루션으로, 간단한 절차를 통해 앱 소스코드 상 보안 취약점을 검사하여 진단 보고서를 제공받을 수 있음에 따라, 유관 컴플라이언스를 효율적으로 대응할 수 있습니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 모바일 보안 관리 (EMM)</title>
+      <link>urihanl/docs/mobile_security/part3/chap10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap10/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 보안 키패드</title>
+      <link>urihanl/docs/mobile_security/part3/chap11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap11/</guid>
+      <description>
+        
+        
+        &lt;p&gt;특히 은행이나 온라인 상거래 업체의 경우 다양한 보안 체계를 제공하지만 사용자의 부주의에 의한 보안 위협을 해결하는 것은 쉽지 않아 보인다.&lt;/p&gt;
+&lt;p&gt;그 중 보안 키패드(Keypad)는 온라인 트랜잭션(Transaction)에서 E2E(End to End) 암호화를 통해 사용자 입력을 보호하는 솔루션입니다. 이에 더해 부가적으로 쿼티(Qwerty) 등 다양한 형식의 키패드를 제공하고, 다양한 웹 브라우저 환경에서도 사용할 수 있도록 지원하여 운영환경에 구애 받지 않고 적용이 가능하도록 라이브러리 형식으로 제공하는 것이 일반적인 보안 키패드 솔루션입니다.&lt;/p&gt;
+&lt;p&gt;본 장에서는 여러 업체 중 라온시큐어의 TouchEn transky를 소개하고자 합니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 모바일 OTP</title>
+      <link>urihanl/docs/mobile_security/part3/chap12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap12/</guid>
+      <description>
+        
+        
+        &lt;p&gt;스마트폰 내에서 일회용 번호를 생성하여 인증하는 기존 금융권의 OTP·보안카드를 대체하는 솔루션입니다. 금융 거래를 위해 OTP 기기 또는 보안카드를 들고 다니는 불편함을 스마트폰에 OTP를 생성하고 자동 입력하여 해결, 특수 보안영역을 통해 안전하고 간편한 금융 보안을 제공합니다.&lt;/p&gt;
+&lt;p&gt;솔루션: V-FRONT (에어큐브), TcouchEn mOTP (라온시큐어)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 모바일 백신 </title>
+      <link>urihanl/docs/mobile_security/part3/chap13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap13/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 모바일 가상화 솔루션  </title>
+      <link>urihanl/docs/mobile_security/part3/chap14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap14/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 바이오 인증</title>
+      <link>urihanl/docs/mobile_security/part3/chap15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap15/</guid>
+      <description>
+        
+        
+        &lt;p&gt;이번 장에서는 라온 시큐어 업체의 TouchEn OnePass 솔루션을 중심으로 바이오 인증 솔루션에 대해서 알아보기로 하겠다. 타사 업체 솔루션의 경우도 일부 인용하여 표시를 하고자 합니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 취약점 진단 컨설팅   </title>
+      <link>urihanl/docs/mobile_security/part3/chap16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part3/chap16/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

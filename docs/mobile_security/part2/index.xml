@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>공부노트 – 보안 규제 및 가이드라인</title>
+    <link>urihanl/docs/mobile_security/part2/</link>
+    <description>Recent content in 보안 규제 및 가이드라인 on 공부노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="urihanl/docs/mobile_security/part2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: IT 컴플라이언스 </title>
+      <link>urihanl/docs/mobile_security/part2/chap5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part2/chap5/</guid>
+      <description>
+        
+        
+        &lt;p&gt;중요한 내용은 세부 시행규칙에 규정되어 있는 것에 직접적인 영향을 받기 때문에 이 내용 중에 수범 상세 규정을 숙지하고 준수하도록 하는 노력이 필요하겠습니다. 또한 금융기관, 공공기관 별로 모호한 규정에 대한 세부 지침을 가이드라인 문서로 배포하는 것이 많으며 이를 참조하면 도움을 많이 받을 수 있습니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 정보보호 관리체계 구축 </title>
+      <link>urihanl/docs/mobile_security/part2/chap6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/docs/mobile_security/part2/chap6/</guid>
+      <description>
+        
+        
+        &lt;p&gt;이러한 인증 제도는 최소한의 보안 수준을 갖추는 지 여부를 검증하는 것으로 일정 수준의 정보보호 관리체계를 갖추고자 하는 기관, 기업 등의 보안 담당자는 숙지할 필요가 있겠습니다. 인증 심사 기준은 앞서 본 IT컴플라이언스에 대한 대응 체계 및 거버넌스를 아우르는 것이므로 이에 대한 내용을 분석해 보고 주요 내용에 대해서 이번 장에서 알아보고자 합니다.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

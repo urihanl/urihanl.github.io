@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>공부노트 – Community</title>
+    <link>urihanl/community/</link>
+    <description>Recent content in Community on 공부노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="urihanl/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i");
+/* Default asciidoc style framework - important */
+/* @import url("https://asciidoctor.org/stylesheets/asciidoctor.css"); */
+
+/* ï¿½ï¿½ asciidoc UI */
+/*
+@import url("css/base.css");
+@import url("css/body.css");
+@import url("css/breadcrumbs.css");
+@import url("css/custom.css");
+
+@import url("css/footer.css");
+@import url("css/header.css");
+@import url("css/highlight.css");
+@import url("css/nav.css");
+@import url("css/page-versions.css");
+@import url("css/pagination-list.css");
+@import url("css/pagination.css");
+@import url("css/print.css");
+@import url("css/toc.css");
+@import url("css/toolbar.css");
+@import url("css/vars.css");
+@import url("css/doc.css");
+@import url("css/main.css"); 
+*/
+
+/* Basic table style */
+table          { border-collapse: collapse; }
+table, th, td  { border: 0px solid; }
+th, td         { padding: 4px; }
+/* Additional style */
+thead tr       { background-color: #eaeaea; }
+td.center      { text-align: center; }
+td.right       { text-align: right; }
+tbody tr:nth-child(even)  { background-color: #fafafa !important ; color: none !important}
+tbody tr:nth-child(odd)   { background-color: #ffffff !important ; color: none !important}
+
+
+.td-sidebar-nav__section .ul-1 ul {
+    padding-left: 0px !important
+}
+.td-max-width-on-larger-screens, .td-content > pre, .td-content > .highlight, .td-content > .lead, .td-content > h1, .td-content > h2, .td-content > ul, .td-content > ol, .td-content > p, .td-content > blockquote, .td-content > dl dd, .td-content .footnotes, .td-content > .alert {
+    max-width: 100% !important
+}
+@media (min-width: 1200px){
+.col-xl-2 {
+    flex: 0 1 18em !important ;
+    max-width: 18em  !important;
+}
+.col-12 {
+    padding-left: 10px !important;
+    flex: 1 1 100% !important;
+    max-width: 100%  !important;
+}
+.doc {
+    max-width: 60em  !important;
+}
+.td-content {
+    max-width: 60em  !important;
+}}
+@media (min-width: 768px){
+.col-xl-2 {
+    flex: 1 1 18em !important ;
+    max-width: 18em  !important;
+}
+.col-xl-8 {
+    flex: 1 1 500px !important;
+    min-width: 500px !important;
+    padding-left: 15px !important;
+}}
+ /* .flex-xl-nowrap{
+    justify-content: center !important
+}
+.td-navbar {
+    max-width: 1300px !important;
+    left: 50% !important;
+    transform: translate(-50%,0%) !important;
+}
+header:not(.article-meta){
+    justify-content: center !important;
+    background-color: #30638E !important;
+}  */
+footer {     height: 50px !important; }
+#content{margin-left:0.0em;line-height:24px}
+h1{color:var(--black) !important;font-family:"Open Sans",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--black) !important;font-family:"Open Sans",sans-serif;}
+.title{color:var(--black) !important;font-family:"Open Sans",sans-serif;font-style: normal; font-weight: normal;}
+.mt-2{margin:0px !important}
+
+/* ï¿½ï¿½ asciicode UI ç‘œï¿½ ï¿½ê¾ªë¸³ å¯ƒï¿½ */
+.doc{margin: 0px !important; padding: 0px !important; font-size: 1rem !important;}
+.doc table.tableblock{font-size: 1rem !important;}
+/* kbd { color: #000 !important} */
+
+/* docsy ï¿½ë¨¯ê½Œ ï¿½ìŽ„ì»™ è­°ê³—ì ™ï¿½ï¿½ å¯ƒï¿½ */
+nav ul.foldable  {
+    padding-left: 0px !important ;
+    margin-left: -0.8em !important;
+}
+nav ul {  margin-left: 0.0em !important}

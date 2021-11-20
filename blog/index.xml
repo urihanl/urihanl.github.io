@@ -1,0 +1,322 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>공부노트 – blog</title>
+    <link>urihanl/blog/</link>
+    <description>Recent content in blog on 공부노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="urihanl/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: hugo 사용하기</title>
+      <link>urihanl/blog/2021/10/06/hugo-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>urihanl/blog/2021/10/06/hugo-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;mathjax-설치&#34;&gt;mathjax 설치&lt;/h2&gt;
+&lt;p&gt;my_partial.js 를 만들어서 &lt;code&gt;/layout/partial/&lt;/code&gt; 에 저장&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//  이전 버전
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text/x-mathjax-config&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;MathJax&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Hub&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Config&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;tex2jax&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#000&#34;&gt;inlineMath&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]],&lt;/span&gt;
+      &lt;span style=&#34;color:#000&#34;&gt;displayMath&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\[&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\]&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]],&lt;/span&gt;
+      &lt;span style=&#34;color:#000&#34;&gt;ignoreClass&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;nostem|nolatexmath&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;asciimath2jax&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#000&#34;&gt;delimiters&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],],&lt;/span&gt;
+      &lt;span style=&#34;color:#000&#34;&gt;ignoreClass&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;nostem|noasciimath&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;});&lt;/span&gt;
+  &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/script&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;async&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// 새 버전
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;MathJax&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;loader&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;load&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;input/tex&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;output/chtml&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;ui/menu&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]},&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;tex&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;inlineMath&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;)$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;displayMath&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\\)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;MathJax-script&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// mermaid
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/script&amp;gt;&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;adoc-에서-수학-차리&#34;&gt;adoc 에서 수학 차리&lt;/h2&gt;
+&lt;p&gt;asciimath 와 latexmath 는 미묘하게 문법이 차이남&lt;/p&gt;
+&lt;h2 id=&#34;asciimath&#34;&gt;asciimath&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;inline 형식의 납작한 형태가 없음.
+&lt;code&gt;[[a,b\],[c,d\]\]((n),(k))&lt;/code&gt; 형식에 편함.&lt;/li&gt;
+&lt;li&gt;inline은 앞에 붙임, block은 가운데의 차이&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;latexmath&#34;&gt;latexmath&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;inline 형식이 있음&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[[a,b\],[c,d\]\]((n),(k))&lt;/code&gt; 형식에 안됨.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;결론&#34;&gt;결론&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;latexmath를 기본으로 지정함 &lt;code&gt;:stem: latexmath&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;필요시 &lt;code&gt;[asciimath]&lt;/code&gt; 형식으로 사용함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;한정자-문제--delimiter&#34;&gt;한정자 문제 ( delimiter)&lt;/h2&gt;
+&lt;p&gt;asciidoc 내부적으로 변환시에 사용하는 한정자 &lt;code&gt;\( ... \)&lt;/code&gt; &lt;code&gt;\$ ... \$&lt;/code&gt;때문에&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;markdown&lt;/th&gt;
+&lt;th&gt;asciidoc&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;인라인&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$( ... )$&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\$ ... \$&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;블록&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;$$ ... $$&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\( ... \)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;으로 정리함.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;다른 툴들은 다음과 같다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. &#39;dollars&#39; (default)
+    * inline: $...$
+    * display: $$...$$
+    * display + equation number: $$...$$ (1)
+1. &#39;brackets&#39;
+    * inline: \\(...\\)
+    * display: \\[...\\]
+    * display + equation number: \\[...\\] (1)
+1. &#39;gitlab&#39;
+    * inline: $`...`$
+    * display: \```math ... ```
+    * isplay + equation number: \```math ... ``` (1)
+1. &#39;julia&#39;
+    * inline: $...$ or ``...``
+    * display: \```math ... ```
+    * display + equation number: \```math ... ``` (1)
+3. &#39;kramdown&#39;
+    * inline: $$...$$
+    * display: $$...$$
+    * display + equation number: $$...$$ (1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;를 layout/partial 에 my_partial.html 로 저장&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;head.html&lt;/code&gt; 같은 곳에  &lt;code&gt;include&lt;/code&gt; 시키면 됨.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;partial&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;my_partial.html&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;반드시 asciidoc 에는 다음과 같이 있어야 함.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:stem:
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mermaid-적용하는-법&#34;&gt;mermaid 적용하는 법&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;layouts/shortcodes/mermaid.html&lt;/code&gt; 에 아래와 같이 해서 &lt;code&gt;shortcode&lt;/code&gt;를 적용한다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;mermaid&amp;quot;&amp;gt;
+  {{.Inner}}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;그 다음&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;div class=&#34;mermaid&#34;&gt;
+    
+graph TD;
+  A--&gt;B;
+  A--&gt;C;
+  B--&gt;D;
+  C--&gt;D;
+
+  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;이런식으로 써 주면 됨.&lt;/p&gt;
+&lt;h2 id=&#34;다국어-적용&#34;&gt;다국어 적용&lt;/h2&gt;
+&lt;p&gt;config.toml 을 설정&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;languages&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;languages&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kr&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;테스트입니다.&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;description&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;김연우  테스트 사이트&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;languageName&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Korean&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Weight used for sorting.&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;weight&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;languages&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;en&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Goldydocs&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;description&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;A Docsy example site&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;languageName&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;English&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Weight used for sorting.&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;weight&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;languages&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;no&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Goldydocs&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;description&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Docsy er operativsystem for skyen&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;languageName&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Norsk&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Language settings&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;contentDir&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;defaultContentLanguage&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;kr&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;defaultContentLanguageInSubdir&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;파일 이름으로 관리하는 방법으로 세팅함.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;asciidoctor-사용하기&#34;&gt;asciidoctor 사용하기&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/&#34;&gt;https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/&lt;/a&gt; 의 내용임.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;which asciidotor&lt;/code&gt; 해서 위치를 알아보고&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt; 프로젝트 디렉토리에 &lt;code&gt;./asciidoctor&lt;/code&gt;를 만든다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;asciidoc test run2&amp;#34;&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#000&#34;&gt;ARGS&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$@&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sed -e &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;s/--safe//&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sed -e &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;s/--no-header-footer//&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sed -e &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;s/--trace//&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$ARGS&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# /usr/bin/asciidoctor -r asciidoctor-diagram -a icons=font -a nofooter -a docinfo=shared $ARGS&lt;/span&gt;
+
+/usr/bin/asciidoctor  -v -B . -r asciidoctor-diagram -a &lt;span style=&#34;color:#000&#34;&gt;icons&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;font -a &lt;span style=&#34;color:#000&#34;&gt;docinfo&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;shared -a nofooter -a noheader -a sectanchors -a &lt;span style=&#34;color:#000&#34;&gt;experimental&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;true&lt;/span&gt; -a figure-caption! -a source-highlighter&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;highlightjs -a toc-title! -a &lt;span style=&#34;color:#000&#34;&gt;stem&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;mathjax - &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sed -E -e &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;s/img src=\&amp;#34;([^/]+)\&amp;#34;/img src=\&amp;#34;\/diagram\/\1\&amp;#34;/&amp;#34;&lt;/span&gt;
+
+mkdir -p static/diagram
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; ls *.svg &amp;gt;/dev/null 2&amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;1&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+  mv -f *.svg static/diagram
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fi&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; ls *.png &amp;gt;/dev/null 2&amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;1&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+  mv -f *.png static/diagram
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;# 실행가능한 파일로 만들어 줘야함.
+chmod +x ./asciidoctor
+# 현재 디렉토리의 파일을 우선적으로 부르도록하면서 hugo 실행
+PATH=$PWD:$PATH hugo server -D
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;아니면 &lt;code&gt;bash&lt;/code&gt; 에 아예 적용하기 위해 &amp;lsquo;~/.bashrc`에 적용&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;PATH&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/projecet/directory:&lt;span style=&#34;color:#000&#34;&gt;$PATH&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;admonition block 을 바꾸기 위해 아래와 같이 적용한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;fix&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;adoc&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;js&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// replace the default admonitions block with one that looks like the antora output to apply similar styling via adoc.css
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;addEventListener&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;load&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;admonitions&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;document&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getElementsByClassName&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;admonition-block&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;admonitions&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;elm&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;admonitions&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;elm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;classList&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;elm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getElementsByTagName&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;p&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;].&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;innerHTML&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;parent&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;elm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;parentNode&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;tempDiv&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;document&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;createElement&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;tempDiv&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;innerHTML&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`&amp;lt;div class=&amp;#34;admonitionblock &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    &amp;lt;table&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;      &amp;lt;tbody&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        &amp;lt;tr&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;          &amp;lt;td class=&amp;#34;icon&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;            &amp;lt;i class=&amp;#34;fa icon-&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; title=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;          &amp;lt;/td&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;          &amp;lt;td class=&amp;#34;content&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;            &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;          &amp;lt;/td&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        &amp;lt;/tr&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;      &amp;lt;/tbody&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    &amp;lt;/table&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;  &amp;lt;/div&amp;gt;`&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;tempDiv&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;childNodes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;parent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;replaceChild&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;elm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;.adoc 문서 상단에&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-asciidoc&#34; data-lang=&#34;asciidoc&#34;&gt;+++
+title = &amp;quot;Goldydocs2&amp;quot;
+linkTitle = &amp;quot;Goldydocs2&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;를 사용한다.&lt;/p&gt;
+&lt;p&gt;:toc: left 나 right는 무시된다.&lt;/p&gt;
+&lt;p&gt;폰트나 분위기를 맞춰주기 위해서&lt;/p&gt;
+&lt;p&gt;asciidoctor용 css 파일을 서비스 해 줌. ubuntu.css 라고 이름변경 했음.&lt;/p&gt;
+&lt;p&gt;다운 받아서 프로젝트 root에 ( asciidoctor 스크립트와 같은 위치)에
+놓고 adoc 파일에서 &lt;code&gt;:stylesheet: ubuntu.css&lt;/code&gt;를 추가한다.&lt;/p&gt;
+&lt;p&gt;adoc과 bootstrap의 간극을 좁히기 위해 두가지 첨부함.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;td-sidebar-nav__section&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;margin-left&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;em&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;line-height&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;gem 에서 추가 설치 할 것 : rouge asciidoctor-diagram&lt;/p&gt;
+&lt;p&gt;assets/scss/&lt;em&gt;variables_project&lt;/em&gt;.scss 에 추가함.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@import &#39;asciidoctor.scss&#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;asciidoctor.scss 를 만들어서 추가함.&lt;/p&gt;
+&lt;p&gt;또는&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[params]
+    # Custom CSS
+    custom_css = [&amp;quot;css/molokai.css&amp;quot;,&amp;quot;css/custom.css&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;설치할 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;apt install asciidoctor
+gem install asciidoctor-html5s
+gem install asciidoctor-diagram
+apt install default-jdk
+apt-get install graphviz
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;config.toml 에 asciidoc 설정이 생김.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;  [markup.asciidocext]
+    extensions =  [&amp;quot;asciidoctor-diagram&amp;quot;,&amp;quot;asciidoctor-html5s&amp;quot;]
+    workingFolderCurrent = true
+    trace = true
+    [markup.asciidocext.attributes]
+        &amp;quot;docinfo&amp;quot; = &amp;quot;shared&amp;quot;
+        &amp;quot;nofooter&amp;quot; = &amp;quot;&amp;quot;
+        &amp;quot;skip-front-matter&amp;quot; = &amp;quot;&amp;quot;
+        &amp;quot;library&amp;quot; = &amp;quot;asciidoctor-ruby&amp;quot;
+        &amp;quot;icons&amp;quot; = &amp;quot;font&amp;quot;
+        &amp;quot;sectlinks&amp;quot; = &amp;quot;&amp;quot;
+        &amp;quot;sectanchors&amp;quot; = &amp;quot;&amp;quot;
+        &amp;quot;figure-caption!&amp;quot; = &amp;quot;&amp;quot;
+        &amp;quot;source-highlighter&amp;quot; = &amp;quot;highlightjs&amp;quot;
+        &amp;quot;experimental&amp;quot; = &amp;quot;true&amp;quot;
+        &amp;quot;toc-title!&amp;quot; = &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;hugo 실행 옵션에 반드시 -d 옵션을 줘야함.&lt;/p&gt;
+&lt;p&gt;아니면 markup.asciidocext.workingFolderCurrent requires hugo command option &amp;ndash;destination to be set 에러나 나게 됨.&lt;/p&gt;
+&lt;h2 id=&#34;asciidoctor-mathematical-살치&#34;&gt;asciidoctor-mathematical 살치&lt;/h2&gt;
+&lt;p&gt;,&amp;ldquo;asciidoctor-mathematical&amp;rdquo;,&amp;ldquo;asciidoctor-bibtex&amp;rdquo; 는 아직 잘 동작 안 함.
+의존성 설치를 먼저 한다.
+sudo apt -qq -y install bison flex libffi-dev libxml2-dev libgdk-pixbuf2.0-dev libcairo2-dev libpango1.0-dev fonts-lyx cmake&lt;/p&gt;
+&lt;p&gt;gem install asciidoctor-mathematical&lt;/p&gt;
+&lt;h2 id=&#34;테마-변경&#34;&gt;테마 변경&lt;/h2&gt;
+&lt;p&gt;relearn 테마로 변경&lt;/p&gt;
+&lt;p&gt;-&amp;gt; 안 맞는 _index.html 삭제
+-&amp;gt; css 를 static/css/에 설치 ( asciidoctor.css )
+-&amp;gt; 설정에 custom_css 추가
+-&amp;gt; css에서 폰트나 highlight, 관련 제거함.&lt;/p&gt;
+&lt;p&gt;아래 택일&lt;/p&gt;
+&lt;p&gt;highlight.js 설치&lt;/p&gt;
+&lt;link rel=&#34;stylesheet&#34;
+      href=&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css&#34;&gt;
+&lt;script src=&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;prism 설치&lt;/p&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;{{ &#34;css/prism.css&#34; | absURL }}&#34;&gt;
+&lt;script src=&#34;{{ &#34;js/prism.js&#34; | absURL }}&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&amp;ndash;&amp;gt; &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;&gt;https://xyproto.github.io/splash/docs/all.html&lt;/a&gt; 에서 전체 선택
+&amp;ndash;&amp;gt;     [markup.asciidocext.attributes]
+&amp;ldquo;source-highlighter&amp;rdquo; = &amp;ldquo;prism&amp;rdquo;
+해줘야 함.&lt;/p&gt;
+&lt;h2 id=&#34;css-수정&#34;&gt;css 수정&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css&#34;&gt;https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css&lt;/a&gt; 를 다운 받음.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ul&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ol&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;margin-left&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1.5&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;em&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;를 제거함.&lt;/p&gt;
+&lt;h2 id=&#34;asciidoc-에서-toc-사용&#34;&gt;asciidoc 에서 toc 사용&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;quot;toc&amp;quot; = &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;추가함.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
