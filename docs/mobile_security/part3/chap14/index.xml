@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 모바일 가상화 솔루션  </title>
-    <link>urihanl/docs/mobile_security/part3/chap14/</link>
+    <link>https://urihanl.github.io/docs/mobile_security/part3/chap14/</link>
     <description>Recent content in 모바일 가상화 솔루션   on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/docs/mobile_security/part3/chap14/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/mobile_security/part3/chap14/index.xml" rel="self" type="application/rss+xml" />
     
     
       

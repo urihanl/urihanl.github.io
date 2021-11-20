@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 아이누어</title>
-    <link>urihanl/docs/h_languages/ainu/</link>
+    <link>https://urihanl.github.io/docs/h_languages/ainu/</link>
     <description>Recent content in 아이누어 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/docs/h_languages/ainu/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/h_languages/ainu/index.xml" rel="self" type="application/rss+xml" />
     
     
       

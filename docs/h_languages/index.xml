@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 사람말</title>
-    <link>urihanl/docs/h_languages/</link>
+    <link>https://urihanl.github.io/docs/h_languages/</link>
     <description>Recent content in 사람말 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/docs/h_languages/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/h_languages/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: 한국어</title>
-      <link>urihanl/docs/h_languages/korea/</link>
+      <link>https://urihanl.github.io/docs/h_languages/korea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/korea/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/korea/</guid>
       <description>
         
         
@@ -27,7 +27,7 @@
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -52,10 +52,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 따갈로그</title>
-      <link>urihanl/docs/h_languages/philiphines/</link>
+      <link>https://urihanl.github.io/docs/h_languages/philiphines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/philiphines/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/philiphines/</guid>
       <description>
         
         
@@ -64,7 +64,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -89,10 +89,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 라틴어</title>
-      <link>urihanl/docs/h_languages/latin/</link>
+      <link>https://urihanl.github.io/docs/h_languages/latin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/latin/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/latin/</guid>
       <description>
         
         
@@ -101,7 +101,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -126,10 +126,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 러시아어</title>
-      <link>urihanl/docs/h_languages/russia/</link>
+      <link>https://urihanl.github.io/docs/h_languages/russia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/russia/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/russia/</guid>
       <description>
         
         
@@ -138,7 +138,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -163,10 +163,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 만주어</title>
-      <link>urihanl/docs/h_languages/manchu/</link>
+      <link>https://urihanl.github.io/docs/h_languages/manchu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/manchu/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/manchu/</guid>
       <description>
         
         
@@ -175,7 +175,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -200,10 +200,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 미얀마어</title>
-      <link>urihanl/docs/h_languages/myanmar/</link>
+      <link>https://urihanl.github.io/docs/h_languages/myanmar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/myanmar/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/myanmar/</guid>
       <description>
         
         
@@ -212,7 +212,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -237,10 +237,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 수메르어</title>
-      <link>urihanl/docs/h_languages/georgia/</link>
+      <link>https://urihanl.github.io/docs/h_languages/georgia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/georgia/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/georgia/</guid>
       <description>
         
         
@@ -249,7 +249,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -274,10 +274,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 스와힐리어</title>
-      <link>urihanl/docs/h_languages/swahili/</link>
+      <link>https://urihanl.github.io/docs/h_languages/swahili/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/swahili/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/swahili/</guid>
       <description>
         
         
@@ -286,7 +286,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -311,10 +311,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 스페인어</title>
-      <link>urihanl/docs/h_languages/spain/</link>
+      <link>https://urihanl.github.io/docs/h_languages/spain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/spain/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/spain/</guid>
       <description>
         
         
@@ -323,7 +323,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -348,10 +348,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 아이누어</title>
-      <link>urihanl/docs/h_languages/ainu/</link>
+      <link>https://urihanl.github.io/docs/h_languages/ainu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/ainu/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/ainu/</guid>
       <description>
         
         
@@ -360,7 +360,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -385,10 +385,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 인도네시아어</title>
-      <link>urihanl/docs/h_languages/indonesia/</link>
+      <link>https://urihanl.github.io/docs/h_languages/indonesia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/indonesia/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/indonesia/</guid>
       <description>
         
         
@@ -397,7 +397,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -422,10 +422,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 일본어</title>
-      <link>urihanl/docs/h_languages/japan/</link>
+      <link>https://urihanl.github.io/docs/h_languages/japan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/japan/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/japan/</guid>
       <description>
         
         
@@ -434,7 +434,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -459,10 +459,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 조지아어</title>
-      <link>urihanl/docs/h_languages/sumer/</link>
+      <link>https://urihanl.github.io/docs/h_languages/sumer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/sumer/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/sumer/</guid>
       <description>
         
         
@@ -471,7 +471,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -496,10 +496,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 중국어</title>
-      <link>urihanl/docs/h_languages/china/</link>
+      <link>https://urihanl.github.io/docs/h_languages/china/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/china/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/china/</guid>
       <description>
         
         
@@ -508,7 +508,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -533,10 +533,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 캄보디아어</title>
-      <link>urihanl/docs/h_languages/cambodia/</link>
+      <link>https://urihanl.github.io/docs/h_languages/cambodia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/cambodia/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/cambodia/</guid>
       <description>
         
         
@@ -545,7 +545,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -570,10 +570,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 태국어</title>
-      <link>urihanl/docs/h_languages/thai/</link>
+      <link>https://urihanl.github.io/docs/h_languages/thai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/thai/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/thai/</guid>
       <description>
         
         
@@ -582,7 +582,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -607,10 +607,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 터키어</title>
-      <link>urihanl/docs/h_languages/turkey/</link>
+      <link>https://urihanl.github.io/docs/h_languages/turkey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/turkey/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/turkey/</guid>
       <description>
         
         
@@ -619,7 +619,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -644,10 +644,10 @@ site up and running fast, and then get back to focusing on great content for you
     
     <item>
       <title>Docs: 한문</title>
-      <link>urihanl/docs/h_languages/hanmun/</link>
+      <link>https://urihanl.github.io/docs/h_languages/hanmun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/h_languages/hanmun/</guid>
+      <guid>https://urihanl.github.io/docs/h_languages/hanmun/</guid>
       <description>
         
         
@@ -656,7 +656,7 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s specifically designed for technical
 documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
 site up and running fast, and then get back to focusing on great content for your users.
-&lt;a href=&#34;urihanl/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://urihanl.github.io/about&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition to the theme itself, we provide an &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;example site&lt;/a&gt; that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&amp;rsquo;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &amp;ldquo;big&amp;rdquo; example.&lt;/p&gt;
 &lt;p&gt;Docsy itself does &lt;strong&gt;not&lt;/strong&gt; provide:&lt;/p&gt;
 &lt;ul&gt;

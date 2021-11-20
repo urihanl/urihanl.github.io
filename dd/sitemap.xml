@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>urihanl/dd/categories/</loc>
+    <loc>https://urihanl.github.io/dd/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="urihanl/categories/"
+                href="https://urihanl.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jj"
-                href="urihanl/jj/categories/"
+                href="https://urihanl.github.io/jj/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dd"
-                href="urihanl/dd/categories/"
+                href="https://urihanl.github.io/dd/categories/"
                 />
   </url><url>
-    <loc>urihanl/dd/tags/</loc>
+    <loc>https://urihanl.github.io/dd/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="urihanl/tags/"
+                href="https://urihanl.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jj"
-                href="urihanl/jj/tags/"
+                href="https://urihanl.github.io/jj/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dd"
-                href="urihanl/dd/tags/"
+                href="https://urihanl.github.io/dd/tags/"
                 />
   </url><url>
-    <loc>urihanl/dd/</loc>
+    <loc>https://urihanl.github.io/dd/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="urihanl/"
+                href="https://urihanl.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jj"
-                href="urihanl/jj/"
+                href="https://urihanl.github.io/jj/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dd"
-                href="urihanl/dd/"
+                href="https://urihanl.github.io/dd/"
                 />
   </url>
 </urlset>

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 정보보호기술</title>
-    <link>urihanl/docs/mobile_security/part1/chap2.technology/</link>
+    <link>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/</link>
     <description>Recent content in 정보보호기술 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="urihanl/docs/mobile_security/part1/chap2.technology/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: 보안 아키텍처(ITU-T X.805)</title>
-      <link>urihanl/docs/mobile_security/part1/chap2.technology/2.1.architecture/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.1.architecture/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part1/chap2.technology/2.1.architecture/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.1.architecture/</guid>
       <description>
         
         
@@ -98,10 +98,10 @@
     
     <item>
       <title>Docs: 암호 기술</title>
-      <link>urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/</guid>
       <description>
         
         

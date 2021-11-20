@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – asd</title>
-    <link>urihanl/tags/asd/</link>
+    <link>https://urihanl.github.io/tags/asd/</link>
     <description>Recent content in asd on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/tags/asd/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/tags/asd/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: OWASP Mobile Top 10 Risks </title>
-      <link>urihanl/docs/mobile_security/supplement/1.owasp/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/supplement/1.owasp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/supplement/1.owasp/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/supplement/1.owasp/</guid>
       <description>
         
         
@@ -105,10 +105,10 @@
     
     <item>
       <title>Docs: 스마트폰 전자금융서비스 보안가이드</title>
-      <link>urihanl/docs/mobile_security/supplement/2.efinance/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/supplement/2.efinance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/supplement/2.efinance/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/supplement/2.efinance/</guid>
       <description>
         
         
@@ -199,10 +199,10 @@
     
     <item>
       <title>Docs: 스마트폰 전자금융서비스 안전 대책</title>
-      <link>urihanl/docs/mobile_security/supplement/3.smartphone/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/supplement/3.smartphone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/supplement/3.smartphone/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/supplement/3.smartphone/</guid>
       <description>
         
         
@@ -250,10 +250,10 @@
     
     <item>
       <title>Docs: PCI DSS 표준</title>
-      <link>urihanl/docs/mobile_security/supplement/4.pcidss/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/supplement/4.pcidss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/supplement/4.pcidss/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/supplement/4.pcidss/</guid>
       <description>
         
         

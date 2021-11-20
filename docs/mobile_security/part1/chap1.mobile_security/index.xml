@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 모바일 보안 일반</title>
-    <link>urihanl/docs/mobile_security/part1/chap1.mobile_security/</link>
+    <link>https://urihanl.github.io/docs/mobile_security/part1/chap1.mobile_security/</link>
     <description>Recent content in 모바일 보안 일반 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="urihanl/docs/mobile_security/part1/chap1.mobile_security/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/mobile_security/part1/chap1.mobile_security/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: 모바일 서비스 시 보안 활동</title>
-      <link>urihanl/docs/mobile_security/part1/chap1.mobile_security/1.1.common/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part1/chap1.mobile_security/1.1.common/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part1/chap1.mobile_security/1.1.common/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part1/chap1.mobile_security/1.1.common/</guid>
       <description>
         
         

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 보안 규제 및 가이드라인</title>
-    <link>urihanl/docs/mobile_security/part2/</link>
+    <link>https://urihanl.github.io/docs/mobile_security/part2/</link>
     <description>Recent content in 보안 규제 및 가이드라인 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/docs/mobile_security/part2/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/mobile_security/part2/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: IT 컴플라이언스 </title>
-      <link>urihanl/docs/mobile_security/part2/chap5/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part2/chap5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part2/chap5/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part2/chap5/</guid>
       <description>
         
         
@@ -29,10 +29,10 @@
     
     <item>
       <title>Docs: 정보보호 관리체계 구축 </title>
-      <link>urihanl/docs/mobile_security/part2/chap6/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part2/chap6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part2/chap6/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part2/chap6/</guid>
       <description>
         
         

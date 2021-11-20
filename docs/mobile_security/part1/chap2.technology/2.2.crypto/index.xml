@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – 암호 기술</title>
-    <link>urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/</link>
+    <link>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/</link>
     <description>Recent content in 암호 기술 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: 암호화 대상</title>
-      <link>urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/2-2-1.target/</link>
+      <link>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/2-2-1.target/</link>
       <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>urihanl/docs/mobile_security/part1/chap2.technology/2.2.crypto/2-2-1.target/</guid>
+      <guid>https://urihanl.github.io/docs/mobile_security/part1/chap2.technology/2.2.crypto/2-2-1.target/</guid>
       <description>
         
         

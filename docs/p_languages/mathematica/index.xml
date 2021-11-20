@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부노트 – Wolfram language</title>
-    <link>urihanl/docs/p_languages/mathematica/</link>
+    <link>https://urihanl.github.io/docs/p_languages/mathematica/</link>
     <description>Recent content in Wolfram language on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="urihanl/docs/p_languages/mathematica/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/docs/p_languages/mathematica/index.xml" rel="self" type="application/rss+xml" />
     
     
       
