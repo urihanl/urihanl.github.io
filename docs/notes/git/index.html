@@ -46,25 +46,57 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>공부노트</title>
+<title>git 사용에 대해 정리 | 공부노트</title>
 
 
   
-  <meta name="description" content="">
-<meta property="og:title" content="" />
-<meta property="og:description" content="" />
+  <meta name="description" content="git init
+git remote add origin https://gitlab.com/urihanl/blog.git
+git add .
+git commit -m &ldquo;수정함&rdquo;
+git branch master
+commit 없이 branch 하면 에러 …">
+<meta property="og:title" content="git 사용에 대해 정리" />
+<meta property="og:description" content="git init
+git remote add origin https://gitlab.com/urihanl/blog.git
+git add .
+git commit -m &ldquo;수정함&rdquo;
+git branch master commit 없이 branch 하면 에러남.
+git push -u origin master
+-u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
+첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
+vscode에서는 id 및 passwd를 제목창에서 물어봄.
+git remote -v 로 확인 git branch로 확인" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://urihanl.github.io/docs/notes/git/" /><meta property="article:section" content="docs" />
 
 <meta property="og:site_name" content="공부노트" />
 
-<meta itemprop="name" content="">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="git 사용에 대해 정리">
+<meta itemprop="description" content="git init
+git remote add origin https://gitlab.com/urihanl/blog.git
+git add .
+git commit -m &ldquo;수정함&rdquo;
+git branch master commit 없이 branch 하면 에러남.
+git push -u origin master
+-u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
+첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
+vscode에서는 id 및 passwd를 제목창에서 물어봄.
+git remote -v 로 확인 git branch로 확인">
 
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="80">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="git 사용에 대해 정리"/>
+<meta name="twitter:description" content="git init
+git remote add origin https://gitlab.com/urihanl/blog.git
+git add .
+git commit -m &ldquo;수정함&rdquo;
+git branch master commit 없이 branch 하면 에러남.
+git push -u origin master
+-u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
+첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
+vscode에서는 id 및 passwd를 제목창에서 물어봄.
+git remote -v 로 확인 git branch로 확인"/>
 
 
 
@@ -275,12 +307,12 @@
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesasciidoc-li">
   <a href="/docs/notes/asciidoc/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesasciidoc"><span class="">asciidoc</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsnotesgit-li">
+  <a href="/docs/notes/git/" title="git 사용에 대해 정리" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsnotesgit"><span class="td-sidebar-nav-active-item">git</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesmarkdown-li">
   <a href="/docs/notes/markdown/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesmarkdown"><span class="">markdown</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesminea-li">
   <a href="/docs/notes/mine/a/" title="테스트입니다." class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsnotesminea"><span class="">asciidoc테스트</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsnotesgit-li">
-  <a href="/docs/notes/git/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsnotesgit"><span class="td-sidebar-nav-active-item"></span></a>
 </li>
   </ul>
 </li>
@@ -372,7 +404,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://urihanl.github.io/docs/notes/git/"></a>
+	<a href="https://urihanl.github.io/docs/notes/git/">git</a>
 </li>
 
 	</ol>
@@ -381,7 +413,7 @@
             
 <div class="doc">
 <div class="td-content">
-	<h1></h1>
+	<h1>git 사용에 대해 정리</h1>
 	
 	<header class="article-meta">
 		
@@ -398,7 +430,22 @@
 		
 		
 	</header>    
-	
+	<p>git init</p>
+<p>git remote add origin <a href="https://gitlab.com/urihanl/blog.git">https://gitlab.com/urihanl/blog.git</a></p>
+<p>git add .</p>
+<p>git commit -m &ldquo;수정함&rdquo;</p>
+<p>git branch master
+commit 없이 branch 하면 에러남.</p>
+<p>git push -u origin master</p>
+<p>-u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.</p>
+<p>첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함.
+아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.</p>
+<p>vscode에서는 id 및 passwd를 제목창에서 물어봄.</p>
+<p>git remote -v 로 확인
+git branch로 확인</p>
+<p>git clone으로 전체 파일 다운로드
+git pull 로 병합하여 최신화</p>
+
 	
 	
 	
