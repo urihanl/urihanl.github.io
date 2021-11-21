@@ -4,6 +4,7 @@
     <link>https://urihanl.github.io/docs/notes/</link>
     <description>Recent content in 공부 노트 on 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="https://urihanl.github.io/docs/notes/index.xml" rel="self" type="application/rss+xml" />
     
@@ -128,6 +129,896 @@ site up and running fast, and then get back to focusing on great content for you
 &lt;p&gt;If you&amp;rsquo;d like to use Docsy&amp;rsquo;s layouts but prefer to use Jekyll, &lt;a href=&#34;https://github.com/vsoch&#34;&gt;vsoch&lt;/a&gt; has created a &lt;a href=&#34;https://github.com/vsoch/docsy-jekyll&#34;&gt;Docsy Jekyll port&lt;/a&gt; that includes many of Docsy&amp;rsquo;s features (though as this is a separate project it won&amp;rsquo;t be automatically updated along with Docsy).&lt;/p&gt;
 &lt;h2 id=&#34;ready-to-get-started&#34;&gt;Ready to get started?&lt;/h2&gt;
 &lt;p&gt;Find out how to build and serve your first site in &lt;a href=&#34;./getting-started/&#34;&gt;Getting Started&lt;/a&gt;. Or visit the &lt;a href=&#34;https://example.docsy.dev&#34;&gt;example site&lt;/a&gt; and &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;its repo&lt;/a&gt; and start exploring!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 테스트입니다.</title>
+      <link>https://urihanl.github.io/docs/notes/mine/a/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://urihanl.github.io/docs/notes/mine/a/</guid>
+      <description>
+        
+        
+        
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_aaaaaaaaasdㅇㄹㄹㄹaaaaaaaa&#34;&gt;aaaaaaaaasdㅇㄹㄹㄹaaaaaaaa&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Optional Author and Revision information immediately follows the header title.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;icon&#34;&gt;&lt;i class=&#34;fa fa-tags&#34;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+    
+gantt
+        dateFormat  YYYY-MM-DD
+        title 간트 차트입니다.
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des1, 5d
+        Future task2              :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, done, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;page-break-after: always;&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;hi&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;hi2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;clais cad&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;interstela*&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;exampleblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;admonitionblock caution&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-caution&#34; title=&#34;Caution&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Wolpertingers are known to nest in server racks.
+Enter at your own risk.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;asdf&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock warning&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-warning&#34; title=&#34;Warning&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Wolpertingers are known to nest in server racks.
+Enter at your own risk.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;An inline equation like \$y=x^2\$.
+&lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_1&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_1&#34; title=&#34;View footnote.&#34;&gt;1&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sidebarblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Discrete headings are useful for making headings inside of other blocks, like this sidebar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;_discrete_heading&#34; class=&#34;discrete&#34;&gt;Discrete Heading&lt;/h2&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Discrete headings can be used where sections are not permitted.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;stemblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;A block equation&lt;/div&gt;
+&lt;div class=&#34;content&#34;&gt;
+\$y = x^2\$
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Protons&lt;/div&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Electrons &lt;sup class=&#34;footnote&#34;&gt;[&lt;a id=&#34;_footnoteref_2&#34; class=&#34;footnote&#34; href=&#34;#_footnotedef_2&#34; title=&#34;View footnote.&#34;&gt;2&lt;/a&gt;]&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Neutrons&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_glossary&#34;&gt;Glossary&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;dlist glossary&#34;&gt;
+&lt;dl&gt;
+&lt;dt&gt;inline&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;wet, cold dirt&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;rain&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;water falling from the sky&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;require  &amp;#39;sinatra&amp;#39; &lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt;&lt;b&gt;(1)&lt;/b&gt;
+
+get &amp;#39;/hi&amp;#39; do &lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt;&lt;b&gt;(2)&lt;/b&gt; &lt;i class=&#34;conum&#34; data-value=&#34;3&#34;&gt;&lt;/i&gt;&lt;b&gt;(3)&lt;/b&gt;
+  &amp;#34;Hello World!&amp;#34;
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;colist arabic&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;Library import&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;URL mapping&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;i class=&#34;conum&#34; data-value=&#34;3&#34;&gt;&lt;/i&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;Response block&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;(function () {
+  var newMathJax = &amp;#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js&amp;#39;;
+  var oldMathJax = &amp;#39;cdn.mathjax.org/mathjax/latest/MathJax.js&amp;#39;;
+
+  var replaceScript = function (script, src) {
+    //
+    //  Make redirected script
+    //
+    var newScript = document.createElement(&amp;#39;script&amp;#39;);
+    newScript.src = newMathJax + src.replace(/.*?(\?|$)/, &amp;#39;$1&amp;#39;);
+    //
+    //  Move onload and onerror handlers to new script
+    //
+    newScript.onload = script.onload;
+    newScript.onerror = script.onerror;
+    script.onload = script.onerror = null;
+    //
+    //  Move any content (old-style configuration scripts)
+    //
+    while (script.firstChild) newScript.appendChild(script.firstChild);
+    //
+    //  Copy script id
+    //
+    if (script.id != null) newScript.id = script.id;
+    //
+    //  Replace original script with new one
+    //
+    script.parentNode.replaceChild(newScript, script);
+    //
+    //  Issue a console warning
+    //
+    console.warn(&amp;#39;WARNING: cdn.mathjax.org has been retired. Check https://www.mathjax.org/cdn-shutting-down/ for migration tips.&amp;#39;)
+  }
+
+  if (document.currentScript) {
+    var script = document.currentScript;
+    replaceScript(script, script.src);
+  } else {
+    //
+    // Look for current script by searching for one with the right source
+    //
+    var n = oldMathJax.length;
+    var scripts = document.getElementsByTagName(&amp;#39;script&amp;#39;);
+    for (var i = 0; i &amp;lt; scripts.length; i++) {
+      var script = scripts[i];
+      var src = (script.src || &amp;#39;&amp;#39;).replace(/.*?:\/\//,&amp;#39;&amp;#39;);
+      if (src.substr(0, n) === oldMathJax) {
+        replaceScript(script, src);
+        break;
+      }
+    }
+  }
+})();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;A matrix can be written as \(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$x = {-b+-sqrt(b^2-4ac)}/{2a}\$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$x = {-b+-sqrt(b^2-4ac)}/{2a}\$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$x = {-b \pm \sqrt{b^2-4ac} \over 2a}\$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$ C = \alpha + \beta Y^{\gamma} + \epsilon \$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$[[a,b],[c,d]] ((n),(k))\$.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$ sum_(i=1)^n i^3=((n(n+1))/2)^2 \$&lt;/p&gt;
+&lt;/div&gt;
+ sum_(i=1)^n i^3=((n(n+1))/2)^2
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;aass
+\$ \frac{12}{11} \pi +  \sum _{ a^{ 2^{A=300a} } } ^{100} A=300  x = {-b+-sqrt(b^2-4ac)}/{2a} \$
+qqww&lt;/p&gt;
+&lt;/div&gt;
+\$ \frac{12}{11} \pi +  \sum _{ a^{ 2^{A=300a} } } ^{100} A=300 \$
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$  \frac{12}{11} \pi +  \sum _{ a^{ 2^{A=300} } } ^{100} A=300 \$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\(\frac{12}{11} nn \pi +  \sum_{ a^{ 2^{Annnn=300} } }^{100} A=300\)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\(\frac{12}{11} nn \pi +  \sum_{ a^{ 2^{A=300} } }^{100} A=300  y=x^2\)&lt;/p&gt;
+&lt;/div&gt;
+$[ sum_(i=1)^n i^3=((n(n+1))/2)^2 ]$
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt; \frac{12}{11} \pi +  \sum_{ a^{ 2^{A=300} } }^{100} A=300 &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Water ( \( H_2O nn \) ) is a critical component.
+== Table cell span&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;caption class=&#34;title&#34;&gt;Table 1. Cell spans columns&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 50%;&#34;/&gt;
+&lt;col style=&#34;width: 50%;&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Name&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Asciidoctor&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Awesome way to write documentation&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34; colspan=&#34;2&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;The statements above say it all&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;caption class=&#34;title&#34;&gt;Table 2. Cell spans rows&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 50%;&#34;/&gt;
+&lt;col style=&#34;width: 50%;&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Name&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34; rowspan=&#34;2&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Asciidoctor&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Awesome way to write documentation&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Works on the JVM&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;caption class=&#34;title&#34;&gt;Table 3. Cell spans both rows and columns&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 33.3333%;&#34;/&gt;
+&lt;col style=&#34;width: 33.3333%;&#34;/&gt;
+&lt;col style=&#34;width: 33.3334%;&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Col1&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Col2&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Col 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34; colspan=&#34;2&#34; rowspan=&#34;2&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Cell spans 2 cols, 2 rows&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Row 1, Col 3&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Row 2, Col 3&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 33.3333%;&#34;/&gt;
+&lt;col style=&#34;width: 33.3333%;&#34;/&gt;
+&lt;col style=&#34;width: 33.3334%;&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Shortcut&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Purpose&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;test&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;kbd:[F11]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Toggle fullscreen&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;kbd:[Ctrl+T]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Open a new tab&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;kbd:[Ctrl+Shift+N]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;New incognito window&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;kbd:[\ ]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Used to escape characters&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;kbd:[Ctrl+\]]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Jump to ㅁㄴㅇㅁㄴㅇ&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;ㅁㄴㅇkeyword  + ㅁㄴㅇㅁㄴ어
+	+ ㄴ어마ㅣ너야ㅐㅂㅈㄷ&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;videoblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/rPQoq7ThGAU?rel=0&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;../company_logo.png&#34; alt=&#34;company logo&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\(C = \alpha + \beta Y^{\gamma} + \epsilon\)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$C = \alpha + \beta Y^{\gamma} + \epsilon\$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;\$C = \alpha + \beta Y^{\gamma} + \epsilon\$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;diag-fc4cc09ae0660bc0850b32404e344b36.png&#34; alt=&#34;Diagram&#34; width=&#34;540&#34; height=&#34;392&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;img src=&#34;diag-0770b2c8e729ba2d48f79665dc5e4563.png&#34; alt=&#34;Diagram&#34; width=&#34;1802&#34; height=&#34;975&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+    
+graph TD;
+  A--&gt;B;
+  A--&gt;C;
+  B--&gt;D;
+  C--&gt;D;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;listingblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;pre class=&#34;highlight&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+Never do today what you can put off ’til tomorrow.
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;quote:[Never do today what you can put off ’til tomorrow.]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;page-break-after: always;&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;sidebarblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;sidebar block&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;quoteblock&#34;&gt;
+&lt;blockquote&gt;
+Never do today what you can put off ’til tomorrow.
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;imageblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;svg contentscripttype=&#34;application/ecmascript&#34; contentstyletype=&#34;text/css&#34; preserveAspectRatio=&#34;none&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 274 285&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; zoomAndPan=&#34;magnify&#34; width=&#34;274px&#34; height=&#34;285px&#34;&gt;&lt;defs&gt;&lt;filter height=&#34;300%&#34; id=&#34;fm8cg9hnvijcw&#34; width=&#34;300%&#34; x=&#34;-1&#34; y=&#34;-1&#34;&gt;&lt;feGaussianBlur result=&#34;blurOut&#34; stdDeviation=&#34;2.0&#34;&gt;&lt;/feGaussianBlur&gt;&lt;feColorMatrix in=&#34;blurOut&#34; result=&#34;blurOut2&#34; type=&#34;matrix&#34; values=&#34;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0&#34;&gt;&lt;/feColorMatrix&gt;&lt;feOffset dx=&#34;4.0&#34; dy=&#34;4.0&#34; in=&#34;blurOut2&#34; result=&#34;blurOut3&#34;&gt;&lt;/feOffset&gt;&lt;feBlend in=&#34;SourceGraphic&#34; in2=&#34;blurOut3&#34; mode=&#34;normal&#34;&gt;&lt;/feBlend&gt;&lt;/filter&gt;&lt;/defs&gt;&lt;g&gt;&lt;rect codeline=&#34;1&#34; fill=&#34;#FEFECE&#34; filter=&#34;url(#fm8cg9hnvijcw)&#34; height=&#34;48&#34; id=&#34;BlockProcessor&#34; style=&#34;stroke:#A80036;stroke-width:1.5;&#34; width=&#34;128&#34; x=&#34;64&#34; y=&#34;7&#34;&gt;&lt;/rect&gt;&lt;ellipse cx=&#34;79&#34; cy=&#34;23&#34; fill=&#34;#ADD1B2&#34; rx=&#34;11&#34; ry=&#34;11&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/ellipse&gt;&lt;path d=&#34;M81.9688,28.6406 Q81.3906,28.9375 80.75,29.0781 Q80.1094,29.2344 79.4063,29.2344 Q76.9063,29.2344 75.5781,27.5938 Q74.2656,25.9375 74.2656,22.8125 Q74.2656,19.6875 75.5781,18.0313 Q76.9063,16.375 79.4063,16.375 Q80.1094,16.375 80.75,16.5313 Q81.4063,16.6875 81.9688,16.9844 L81.9688,19.7031 Q81.3438,19.125 80.75,18.8594 Q80.1563,18.5781 79.5313,18.5781 Q78.1875,18.5781 77.5,19.6563 Q76.8125,20.7188 76.8125,22.8125 Q76.8125,24.9063 77.5,25.9844 Q78.1875,27.0469 79.5313,27.0469 Q80.1563,27.0469 80.75,26.7813 Q81.3438,26.5 81.9688,25.9219 L81.9688,28.6406 Z &#34; fill=&#34;#000000&#34;&gt;&lt;/path&gt;&lt;text fill=&#34;#000000&#34; font-family=&#34;sans-serif&#34; font-size=&#34;12&#34; lengthAdjust=&#34;spacing&#34; textLength=&#34;96&#34; x=&#34;93&#34; y=&#34;27.1543&#34;&gt;BlockProcessor&lt;/text&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;65&#34; x2=&#34;191&#34; y1=&#34;39&#34; y2=&#34;39&#34;&gt;&lt;/line&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;65&#34; x2=&#34;191&#34; y1=&#34;47&#34; y2=&#34;47&#34;&gt;&lt;/line&gt;&lt;rect codeline=&#34;2&#34; fill=&#34;#FEFECE&#34; filter=&#34;url(#fm8cg9hnvijcw)&#34; height=&#34;48&#34; id=&#34;DiagramBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.5;&#34; width=&#34;117&#34; x=&#34;69.5&#34; y=&#34;115&#34;&gt;&lt;/rect&gt;&lt;ellipse cx=&#34;84.5&#34; cy=&#34;131&#34; fill=&#34;#ADD1B2&#34; rx=&#34;11&#34; ry=&#34;11&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/ellipse&gt;&lt;path d=&#34;M87.4688,136.6406 Q86.8906,136.9375 86.25,137.0781 Q85.6094,137.2344 84.9063,137.2344 Q82.4063,137.2344 81.0781,135.5938 Q79.7656,133.9375 79.7656,130.8125 Q79.7656,127.6875 81.0781,126.0313 Q82.4063,124.375 84.9063,124.375 Q85.6094,124.375 86.25,124.5313 Q86.9063,124.6875 87.4688,124.9844 L87.4688,127.7031 Q86.8438,127.125 86.25,126.8594 Q85.6563,126.5781 85.0313,126.5781 Q83.6875,126.5781 83,127.6563 Q82.3125,128.7188 82.3125,130.8125 Q82.3125,132.9063 83,133.9844 Q83.6875,135.0469 85.0313,135.0469 Q85.6563,135.0469 86.25,134.7813 Q86.8438,134.5 87.4688,133.9219 L87.4688,136.6406 Z &#34; fill=&#34;#000000&#34;&gt;&lt;/path&gt;&lt;text fill=&#34;#000000&#34; font-family=&#34;sans-serif&#34; font-size=&#34;12&#34; lengthAdjust=&#34;spacing&#34; textLength=&#34;85&#34; x=&#34;98.5&#34; y=&#34;135.1543&#34;&gt;DiagramBlock&lt;/text&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;70.5&#34; x2=&#34;185.5&#34; y1=&#34;147&#34; y2=&#34;147&#34;&gt;&lt;/line&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;70.5&#34; x2=&#34;185.5&#34; y1=&#34;155&#34; y2=&#34;155&#34;&gt;&lt;/line&gt;&lt;rect codeline=&#34;3&#34; fill=&#34;#FEFECE&#34; filter=&#34;url(#fm8cg9hnvijcw)&#34; height=&#34;48&#34; id=&#34;DitaaBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.5;&#34; width=&#34;98&#34; x=&#34;7&#34; y=&#34;223&#34;&gt;&lt;/rect&gt;&lt;ellipse cx=&#34;22&#34; cy=&#34;239&#34; fill=&#34;#ADD1B2&#34; rx=&#34;11&#34; ry=&#34;11&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/ellipse&gt;&lt;path d=&#34;M24.9688,244.6406 Q24.3906,244.9375 23.75,245.0781 Q23.1094,245.2344 22.4063,245.2344 Q19.9063,245.2344 18.5781,243.5938 Q17.2656,241.9375 17.2656,238.8125 Q17.2656,235.6875 18.5781,234.0313 Q19.9063,232.375 22.4063,232.375 Q23.1094,232.375 23.75,232.5313 Q24.4063,232.6875 24.9688,232.9844 L24.9688,235.7031 Q24.3438,235.125 23.75,234.8594 Q23.1563,234.5781 22.5313,234.5781 Q21.1875,234.5781 20.5,235.6563 Q19.8125,236.7188 19.8125,238.8125 Q19.8125,240.9063 20.5,241.9844 Q21.1875,243.0469 22.5313,243.0469 Q23.1563,243.0469 23.75,242.7813 Q24.3438,242.5 24.9688,241.9219 L24.9688,244.6406 Z &#34; fill=&#34;#000000&#34;&gt;&lt;/path&gt;&lt;text fill=&#34;#000000&#34; font-family=&#34;sans-serif&#34; font-size=&#34;12&#34; lengthAdjust=&#34;spacing&#34; textLength=&#34;66&#34; x=&#34;36&#34; y=&#34;243.1543&#34;&gt;DitaaBlock&lt;/text&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;8&#34; x2=&#34;104&#34; y1=&#34;255&#34; y2=&#34;255&#34;&gt;&lt;/line&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;8&#34; x2=&#34;104&#34; y1=&#34;263&#34; y2=&#34;263&#34;&gt;&lt;/line&gt;&lt;rect codeline=&#34;4&#34; fill=&#34;#FEFECE&#34; filter=&#34;url(#fm8cg9hnvijcw)&#34; height=&#34;48&#34; id=&#34;PlantUmlBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.5;&#34; width=&#34;120&#34; x=&#34;140&#34; y=&#34;223&#34;&gt;&lt;/rect&gt;&lt;ellipse cx=&#34;155&#34; cy=&#34;239&#34; fill=&#34;#ADD1B2&#34; rx=&#34;11&#34; ry=&#34;11&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/ellipse&gt;&lt;path d=&#34;M157.9688,244.6406 Q157.3906,244.9375 156.75,245.0781 Q156.1094,245.2344 155.4063,245.2344 Q152.9063,245.2344 151.5781,243.5938 Q150.2656,241.9375 150.2656,238.8125 Q150.2656,235.6875 151.5781,234.0313 Q152.9063,232.375 155.4063,232.375 Q156.1094,232.375 156.75,232.5313 Q157.4063,232.6875 157.9688,232.9844 L157.9688,235.7031 Q157.3438,235.125 156.75,234.8594 Q156.1563,234.5781 155.5313,234.5781 Q154.1875,234.5781 153.5,235.6563 Q152.8125,236.7188 152.8125,238.8125 Q152.8125,240.9063 153.5,241.9844 Q154.1875,243.0469 155.5313,243.0469 Q156.1563,243.0469 156.75,242.7813 Q157.3438,242.5 157.9688,241.9219 L157.9688,244.6406 Z &#34; fill=&#34;#000000&#34;&gt;&lt;/path&gt;&lt;text fill=&#34;#000000&#34; font-family=&#34;sans-serif&#34; font-size=&#34;12&#34; lengthAdjust=&#34;spacing&#34; textLength=&#34;88&#34; x=&#34;169&#34; y=&#34;243.1543&#34;&gt;PlantUmlBlock&lt;/text&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;141&#34; x2=&#34;259&#34; y1=&#34;255&#34; y2=&#34;255&#34;&gt;&lt;/line&gt;&lt;line style=&#34;stroke:#A80036;stroke-width:1.5;&#34; x1=&#34;141&#34; x2=&#34;259&#34; y1=&#34;263&#34; y2=&#34;263&#34;&gt;&lt;/line&gt;&lt;path codeline=&#34;6&#34; d=&#34;M128,75.02 C128,88.58 128,103.04 128,114.68 &#34; fill=&#34;none&#34; id=&#34;BlockProcessor-backto-DiagramBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/path&gt;&lt;polygon fill=&#34;none&#34; points=&#34;121,75,128,55,135,75,121,75&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/polygon&gt;&lt;path codeline=&#34;7&#34; d=&#34;M101.06,179.66 C91.22,194.15 80.41,210.07 71.84,222.68 &#34; fill=&#34;none&#34; id=&#34;DiagramBlock-backto-DitaaBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/path&gt;&lt;polygon fill=&#34;none&#34; points=&#34;95.35,175.61,112.38,163,106.93,183.48,95.35,175.61&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/polygon&gt;&lt;path codeline=&#34;8&#34; d=&#34;M154.94,179.66 C164.78,194.15 175.59,210.07 184.16,222.68 &#34; fill=&#34;none&#34; id=&#34;DiagramBlock-backto-PlantUmlBlock&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/path&gt;&lt;polygon fill=&#34;none&#34; points=&#34;149.07,183.48,143.62,163,160.65,175.61,149.07,183.48&#34; style=&#34;stroke:#A80036;stroke-width:1.0;&#34;&gt;&lt;/polygon&gt;&lt;/g&gt;&lt;/svg&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;stemblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+\$sqrt(4) = 2\$
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock note&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-note&#34; title=&#34;Note&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;A NOTE admonition block&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Qui in magna commodo, est labitur dolorum an. Est ne magna primis
+adolescens.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Fusce euismod commodo velit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vivamus fringilla mi eu lacus.&lt;/p&gt;
+&lt;div class=&#34;olist loweralpha&#34;&gt;
+&lt;ol class=&#34;loweralpha&#34; type=&#34;a&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Fusce euismod commodo velit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vivamus fringilla mi eu lacus.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Donec eget arcu bibendum
+nunc consequat lobortis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;sect1&#34;&gt;
+&lt;h2 id=&#34;_my_diabolical_mathmatical_opus&#34;&gt;My Diabolical Mathmatical Opus&lt;/h2&gt;
+&lt;div class=&#34;sectionbody&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Jamie Moriarty&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;stemblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+\$sqrt(4) = 2\$
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;table class=&#34;tableblock frame-all grid-all stretch&#34;&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 20%;&#34;/&gt;
+&lt;col style=&#34;width: 30%;&#34;/&gt;
+&lt;col style=&#34;width: 50%;&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Name&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Group&lt;/th&gt;
+&lt;th class=&#34;tableblock halign-left valign-top&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Firefox&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Web Browser&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;div class=&#34;content&#34;&gt;&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Mozilla Firefox is an open-source web browser.
+It’s designed for:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;standards compliance,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;performance and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;portability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Ruby&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;p class=&#34;tableblock&#34;&gt;Programming Language&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;tableblock halign-left valign-top&#34;&gt;&lt;div class=&#34;content&#34;&gt;&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;A programmer’s best friend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;…​&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;exampleblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;안녕? : ㄴㅇㄹㄴㅇㄹ&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;gettysburg&#34; class=&#34;quoteblock&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;Gettysburg Address&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Four score and seven years ago our fathers brought forth
+on this continent a new nation…​&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Now we are engaged in a great civil war, testing whether
+that nation, or any nation so conceived and so dedicated,
+can long endure. …​&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;attribution&#34;&gt;
+— Abraham Lincoln&lt;br/&gt;
+&lt;cite&gt;Address delivered at the dedication of the Cemetery at Gettysburg&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock note&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-note&#34; title=&#34;Note&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;This is an example of an admonition block.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Unlike an admonition paragraph, it may contain any AsciiDoc content.
+The style can be any one of the admonition labels:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NOTE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TIP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WARNING&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CAUTION&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IMPORTANT&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock note&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-note&#34; title=&#34;Note&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Unlike an admonition paragraph, it may contain any AsciiDoc content.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock tip&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-tip&#34; title=&#34;Tip&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Unlike an admonition paragraph, it may contain any AsciiDoc content.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock warning&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-warning&#34; title=&#34;Warning&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Unlike an admonition paragraph, it may contain any AsciiDoc content.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock caution&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-caution&#34; title=&#34;Caution&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Unlike an admonition paragraph, it may contain any AsciiDoc content.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;admonitionblock important&#34;&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&#34;icon&#34;&gt;
+&lt;i class=&#34;fa icon-important&#34; title=&#34;Important&#34;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&#34;content&#34;&gt;
+Unlike an admonition paragraph, it may contain any AsciiDoc content.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;arts of an atom&lt;/div&gt;
+&lt;ol class=&#34;arabic&#34; reversed=&#34;&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Protons&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Electrons&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;asd&lt;/div&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Neutrons&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dlist&#34;&gt;
+&lt;div class=&#34;title&#34;&gt;asdasd&lt;/div&gt;
+&lt;dl&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;CPU&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;The brain of the computer.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Hard drive&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Permanent storage for operating system and/or user files.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;RAM&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Temporarily stores information the CPU uses during operation.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Keyboard&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Used to enter text or control items on the screen.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Mouse&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Used to point to and select items on your computer screen.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Monitor&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Displays information in visual form using text and graphics.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Operating Systems&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;dlist&#34;&gt;
+&lt;dl&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Linux&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Fedora&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Desktop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;asd&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;asd&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;qwe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;aaww&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;qwe&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;asdqwe&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;asd&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;asdasdasd&lt;/p&gt;
+&lt;div class=&#34;ulist&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;test&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;BSD&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;FreeBSD&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NetBSD&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;Cloud Providers&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;dlist&#34;&gt;
+&lt;dl&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;PaaS&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;OpenShift&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CloudBees&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;dt class=&#34;hdlist1&#34;&gt;IaaS&lt;/dt&gt;
+&lt;dd&gt;
+&lt;div class=&#34;olist arabic&#34;&gt;
+&lt;ol class=&#34;arabic&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Amazon EC2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rackspace&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;footnotes&#34;&gt;
+&lt;hr/&gt;
+&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_1&#34;&gt;
+&lt;a href=&#34;#_footnoteref_1&#34;&gt;1&lt;/a&gt;. The double hail-and-rainbow level makes my toes tingle.
+&lt;/div&gt;
+&lt;div class=&#34;footnote&#34; id=&#34;_footnotedef_2&#34;&gt;
+&lt;a href=&#34;#_footnoteref_2&#34;&gt;2&lt;/a&gt;. The double hail-and-rainbow level makes my toes tingle.
+&lt;/div&gt;
+&lt;/div&gt;
 
       </description>
     </item>
