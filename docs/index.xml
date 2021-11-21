@@ -235,6 +235,10 @@ commit 없이 branch 하면 에러남.&lt;/p&gt;
 git branch로 확인&lt;/p&gt;
 &lt;p&gt;git clone으로 전체 파일 다운로드
 git pull 로 병합하여 최신화&lt;/p&gt;
+&lt;p&gt;submodule 의 경우&lt;/p&gt;
+&lt;p&gt;git submodule foreach git pull orogin master&lt;/p&gt;
+&lt;p&gt;충돌이 난 경우&lt;/p&gt;
+&lt;p&gt;git push origin HEAD:master&lt;/p&gt;
 
       </description>
     </item>

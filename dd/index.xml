@@ -4,6 +4,7 @@
     <link>https://urihanl.github.io/dd/</link>
     <description>Recent content on 또니의 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="https://urihanl.github.io/dd/index.xml" rel="self" type="application/rss+xml" />
     
@@ -11,6 +12,19 @@
       
       
     
+    
+    <item>
+      <title>Blog: Easy documentation with Docsy</title>
+      <link>https://urihanl.github.io/dd/blog/2018/10/06/easy-documentation-with-docsy/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://urihanl.github.io/dd/blog/2018/10/06/easy-documentation-with-docsy/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
     
   </channel>
 </rss>
