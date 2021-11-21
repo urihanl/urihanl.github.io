@@ -1,15 +1,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>또니의 공부노트 – 또니의 공부노트</title>
-    <link>https://urihanl.github.io/dd/</link>
-    <description>Recent content on 또니의 공부노트</description>
+    <title>또니의 공부노트 – 또니 새소식</title>
+    <link>https://urihanl.github.io/dd/blog/news/</link>
+    <description>Recent content in 또니 새소식 on 또니의 공부노트</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://urihanl.github.io/dd/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://urihanl.github.io/dd/blog/news/index.xml" rel="self" type="application/rss+xml" />
     
     
       
+        
       
     
     
