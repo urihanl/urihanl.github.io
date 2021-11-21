@@ -18,19 +18,6 @@
     <loc>https://urihanl.github.io/dd/blog/2018/10/06/easy-documentation-with-docsy/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urihanl.github.io/dd/blog/</loc>
-    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://urihanl.github.io/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="dd"
-                href="https://urihanl.github.io/dd/blog/"
-                />
-  </url><url>
     <loc>https://urihanl.github.io/dd/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -47,6 +34,19 @@
                 rel="alternate"
                 hreflang="dd"
                 href="https://urihanl.github.io/dd/"
+                />
+  </url><url>
+    <loc>https://urihanl.github.io/dd/blog/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://urihanl.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="dd"
+                href="https://urihanl.github.io/dd/blog/"
                 />
   </url><url>
     <loc>https://urihanl.github.io/dd/categories/</loc>
