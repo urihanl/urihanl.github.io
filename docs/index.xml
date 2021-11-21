@@ -1505,5 +1505,18 @@ PCI DSS 인증은 하기와 같은 12개의 범위와 매년 추가 반영된 �
       </description>
     </item>
     
+    <item>
+      <title>Docs: </title>
+      <link>https://urihanl.github.io/docs/notes/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://urihanl.github.io/docs/notes/git/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
