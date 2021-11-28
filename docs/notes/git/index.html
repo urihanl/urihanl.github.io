@@ -49,60 +49,27 @@
 <title>git 사용에 대해 정리 | 공부노트</title>
 
 
-  
-  <meta name="description" content="git init
-git remote add origin https://gitlab.com/urihanl/blog.git
-git add .
-git commit -m &ldquo;수정함&rdquo;
-git branch master
-commit 없이 branch 하면 에러 …">
+  <meta name="description" content="이 홈페이지에 사용된 GIT 지식">
 <meta property="og:title" content="git 사용에 대해 정리" />
-<meta property="og:description" content="git init
-git remote add origin https://gitlab.com/urihanl/blog.git
-git add .
-git commit -m &ldquo;수정함&rdquo;
-git branch master commit 없이 branch 하면 에러남.
-git push -u origin master
--u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
-첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
-vscode에서는 id 및 passwd를 제목창에서 물어봄.
-git remote -v 로 확인 git branch로 확인" />
+<meta property="og:description" content="이 홈페이지에 사용된 GIT 지식" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://urihanl.github.io/docs/notes/git/" /><meta property="article:section" content="docs" />
-
-<meta property="og:site_name" content="공부노트" />
+<meta property="article:published_time" content="2021-11-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-11-28T00:00:00&#43;00:00" /><meta property="og:site_name" content="공부노트" />
 
 <meta itemprop="name" content="git 사용에 대해 정리">
-<meta itemprop="description" content="git init
-git remote add origin https://gitlab.com/urihanl/blog.git
-git add .
-git commit -m &ldquo;수정함&rdquo;
-git branch master commit 없이 branch 하면 에러남.
-git push -u origin master
--u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
-첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
-vscode에서는 id 및 passwd를 제목창에서 물어봄.
-git remote -v 로 확인 git branch로 확인">
-
+<meta itemprop="description" content="이 홈페이지에 사용된 GIT 지식"><meta itemprop="datePublished" content="2021-11-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-11-28T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="147">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="git 사용에 대해 정리"/>
-<meta name="twitter:description" content="git init
-git remote add origin https://gitlab.com/urihanl/blog.git
-git add .
-git commit -m &ldquo;수정함&rdquo;
-git branch master commit 없이 branch 하면 에러남.
-git push -u origin master
--u 로 지정하고 하면 다음부터는 git push 만 하면 자동임.
-첫 push에서 branch를 같게 하려면 다운 받아서 변경해서 올려야 함. 아니면 다른 이름으로 올려서 default를 바꾸는 방법으로 해야 함.
-vscode에서는 id 및 passwd를 제목창에서 물어봄.
-git remote -v 로 확인 git branch로 확인"/>
+<meta name="twitter:description" content="이 홈페이지에 사용된 GIT 지식"/>
 
 
 
 
-<link rel="preload" href="/scss/main.min.8c73f1de43658e3520db8dc28c27baf8451a82fa7e1d189cca8a6e259b61f275.css" as="style">
-<link href="/scss/main.min.8c73f1de43658e3520db8dc28c27baf8451a82fa7e1d189cca8a6e259b61f275.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.2edcac5c7069a549c20f20519831efb0f701fd5799341939d7cbba3d7b1fadb4.css" as="style">
+<link href="/scss/main.min.2edcac5c7069a549c20f20519831efb0f701fd5799341939d7cbba3d7b1fadb4.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -169,6 +136,20 @@ git remote -v 로 확인 git branch로 확인"/>
 				<a class="nav-link" href="/community/" ><i class='fas fa-users'></i><span>이야기</span></a>
 			</li>
 			
+			
+			<li class="nav-item dropdown mr-4 d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	내용
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs/">보안/IT</a>
+	
+	<a class="dropdown-item" href="/plang/">프로그래밍언어</a>
+	
+</div>
+
+			</li>
 			
 			
 			<li class="nav-item dropdown mr-4 d-none d-lg-block">
@@ -305,14 +286,14 @@ git remote -v 로 확인 git branch로 확인"/>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsnotes-li">
   <a href="/docs/notes/" title="공부 노트를 만드는 동안 필요한 지식 모음" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotes"><span class="">공부 노트 만들기</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesasciidoc-li">
-  <a href="/docs/notes/asciidoc/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesasciidoc"><span class="">asciidoc</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsnotesgit-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsnotesgit-li">
   <a href="/docs/notes/git/" title="git 사용에 대해 정리" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsnotesgit"><span class="td-sidebar-nav-active-item">git</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesmarkdown-li">
-  <a href="/docs/notes/markdown/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesmarkdown"><span class="">markdown</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesminea-li">
   <a href="/docs/notes/mine/a/" title="테스트입니다." class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsnotesminea"><span class="">asciidoc테스트</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesasciidoc-li">
+  <a href="/docs/notes/asciidoc/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesasciidoc"><span class="">asciidoc</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsnotesmarkdown-li">
+  <a href="/docs/notes/markdown/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsnotesmarkdown"><span class="">markdown</span></a>
 </li>
   </ul>
 </li>
@@ -326,6 +307,7 @@ git remote -v 로 확인 git branch로 확인"/>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a id="print" href="https://urihanl.github.io/docs/notes/_print/"><i class="fa fa-print fa-fw"></i> 전체 섹션 프린트</a>
 
 </div>
 
@@ -345,17 +327,6 @@ git remote -v 로 확인 git branch로 확인"/>
 
 
   
-  
-    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
-      
-        <h5 class="taxonomy-title">Tag Cloud</h5>
-      
-      <ul class="taxonomy-terms">
-        
-          <li><a class="taxonomy-term" href="https://urihanl.github.io/tags/asd/" data-taxonomy-term="asd"><span class="taxonomy-label">asd</span><span class="taxonomy-count">4</span></a></li>
-        
-      </ul>
-    </div>
   
 
 	
@@ -414,7 +385,7 @@ git remote -v 로 확인 git branch로 확인"/>
 <div class="doc">
 <div class="td-content">
 	<h1>git 사용에 대해 정리</h1>
-	
+	<div class="lead">이 홈페이지에 사용된 GIT 지식</div>
 	<header class="article-meta">
 		
 		
@@ -495,8 +466,12 @@ git push origin master
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
 
 
 
@@ -507,7 +482,6 @@ git push origin master
 
 
 
- 
 
 
 
@@ -520,7 +494,9 @@ git push origin master
 
 
 
-<script src="/js/main.min.50292527552cd8c7d044c0edef99d03e8a2161792aed9a11912ec5064c8bb2a4.js" integrity="sha256-UCklJ1Us2MfQRMDt75nQPoohYXkq7ZoRkS7FBkyLsqQ=" crossorigin="anonymous"></script>
+
+
+<script src="/js/main.min.ee94b6d506224ccef261393d66ca441a68472d5f5e005d09f0af1ebd40fa55cf.js" integrity="sha256-7pS21QYiTM7yYTk9ZspEGmhHLV9eAF0J8K8evUD6Vc8=" crossorigin="anonymous"></script>
 
 
 

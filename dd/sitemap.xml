@@ -11,12 +11,27 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="jj"
+                href="https://urihanl.github.io/jj/blog/news/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="dd"
                 href="https://urihanl.github.io/dd/blog/news/"
                 />
   </url><url>
     <loc>https://urihanl.github.io/dd/blog/2018/10/06/easy-documentation-with-docsy/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="jj"
+                href="https://urihanl.github.io/jj/blog/2018/10/06/easy-documentation-with-docsy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="dd"
+                href="https://urihanl.github.io/dd/blog/2018/10/06/easy-documentation-with-docsy/"
+                />
   </url><url>
     <loc>https://urihanl.github.io/dd/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
@@ -42,6 +57,11 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://urihanl.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jj"
+                href="https://urihanl.github.io/jj/blog/"
                 />
     <xhtml:link
                 rel="alternate"
