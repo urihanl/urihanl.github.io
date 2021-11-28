@@ -84,7 +84,7 @@ git push -u origin master
 vscode에서는 id 및 passwd를 제목창에서 물어봄.
 git remote -v 로 확인 git branch로 확인">
 
-<meta itemprop="wordCount" content="97">
+<meta itemprop="wordCount" content="147">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="git 사용에 대해 정리"/>
 <meta name="twitter:description" content="git init
@@ -449,7 +449,22 @@ git pull 로 병합하여 최신화</p>
 <p>git submodule foreach git pull orogin master</p>
 <p>충돌이 난 경우</p>
 <p>git push origin HEAD:master</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#000">path</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">$(</span><span style="color:#204a87">pwd</span><span style="color:#204a87;font-weight:bold">)</span>
+<span style="color:#204a87">echo</span> <span style="color:#000">$path</span>
 
+<span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;##### 외부에서 작업한 내용을 저장함 #####&#34;</span>
+<span style="color:#204a87">cd</span> /mnt/d/OneDrive/notes
+git config credential.helper store --global
+git pull origin master
+git add .
+<span style="color:#000">msg</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;`date`에 추가한 내용&#34;</span>
+<span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">[</span> <span style="color:#000">$#</span> -eq <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#ce5c00;font-weight:bold">]</span> 
+  <span style="color:#204a87;font-weight:bold">then</span> <span style="color:#000">msg</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;</span><span style="color:#000">$1</span><span style="color:#4e9a06">&#34;</span>
+<span style="color:#204a87;font-weight:bold">fi</span>
+git commit -m <span style="color:#4e9a06">&#34;</span><span style="color:#000">$msg</span><span style="color:#4e9a06">&#34;</span>
+<span style="color:#8f5902;font-style:italic"># Push source and build repos.</span>
+git push origin master
+</code></pre></div>
 	
 	
 	
