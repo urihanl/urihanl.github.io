@@ -13,27 +13,12 @@
   </url><url>
     <loc>https://urihanl.github.io/docs/mobile_security/part2/chap6/</loc>
   </url><url>
-    <loc>https://urihanl.github.io/blog/releases/</loc>
+    <loc>https://urihanl.github.io/blog/progress/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urihanl.github.io/docs/mobile_security/part2/</loc>
   </url><url>
-    <loc>https://urihanl.github.io/blog/news/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="dd"
-                href="https://urihanl.github.io/dd/blog/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="jj"
-                href="https://urihanl.github.io/jj/blog/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://urihanl.github.io/blog/news/"
-                />
+    <loc>https://urihanl.github.io/blog/blog/</loc>
   </url><url>
     <loc>https://urihanl.github.io/docs/mobile_security/part3/</loc>
   </url><url>
@@ -179,8 +164,8 @@
                 href="https://urihanl.github.io/tags/"
                 />
   </url><url>
-    <loc>https://urihanl.github.io/plang/</loc>
-  </url><url>
     <loc>https://urihanl.github.io/community/</loc>
+  </url><url>
+    <loc>https://urihanl.github.io/plang/</loc>
   </url>
 </urlset>
