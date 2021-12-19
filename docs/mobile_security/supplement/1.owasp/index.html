@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.84.1" />
+<meta name="generator" content="Hugo 0.91.0" />
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -63,7 +63,7 @@
 <meta itemprop="description" content="OWASP(Open Web Application Security Project)는 안전한 웹 및 응용 애플리케이션을 개발할 수 있도록 지원하기 위해 미국에서 2004년 4월부터 시작된 비영리 단체이며, 전 세계 기업, 교육기관 및 개인이 만들어가는 오픈 소스 애플리케이션 보안 프로젝트를 진행하고 있습니다.
 ">
 
-<meta itemprop="wordCount" content="459">
+<meta itemprop="wordCount" content="475">
 <meta itemprop="keywords" content="," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="OWASP Mobile Top 10 Risks "/>
 <meta name="twitter:description" content="OWASP(Open Web Application Security Project)는 안전한 웹 및 응용 애플리케이션을 개발할 수 있도록 지원하기 위해 미국에서 2004년 4월부터 시작된 비영리 단체이며, 전 세계 기업, 교육기관 및 개인이 만들어가는 오픈 소스 애플리케이션 보안 프로젝트를 진행하고 있습니다.
@@ -72,8 +72,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" as="style">
-<link href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
@@ -416,83 +416,70 @@
 		
 		
 	</header>    
-	<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 12.5%;"/>
-<col style="width: 25%;"/>
-<col style="width: 62.5%;"/>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">번호</th>
-<th class="tableblock halign-left valign-top">취약점</th>
-<th class="tableblock halign-left valign-top">대응방안</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">부적절한 플랫폼의 사용</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Improper Platform Usage) 플랫폼 기능의 오용 또는 플랫폼 보안통제 미 적용으로 인해 발생하는 문제</p>
-<p class="tableblock">Android intents*, 플랫폼 권한, TouchID의 오용, 키 체인 또는 모바일 운영 체제의 일부인 다른 보안 컨트롤을 포함 할 수 있습니다.</p>
-<p class="tableblock">* 컴포넌트(Activity, Content Provider, Broadcast Receiver, Service) 간의 호출과 메시지 전달에 이용</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">안전하지 않은 데이터 저장</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Insecure Data Storage)	Top 10 Mobile Risk 2014에서 M2와 M4의 조합</p>
-<p class="tableblock">안전하지 않은 데이터 저장 및 의도하지 않은 데이터 유출을 포함 합니다.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">안전하지 않은 통신</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Insecure Communication)	세션성립을 위한 악의적인 핸드쉐이킹(handshaking), 잘못된 SSL 버전, 불완전한 연결, 민감한 정보의 평문 통신 등을 포함 합니다. 필요한 경우 사용자 신원 유지 실패</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">안전하지 않은 인증</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Insecure Authentication)	최종 사용자 또는 잘못된 세션 관리 인증의 개념을 포함 필요한 경우 사용자를 식별하지 못함</p>
-<p class="tableblock">필요한 경우 사용자를 식별하지 못함, 필요한 경우 사용자 신원 유지 실패, 세션 관리의 약점</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">불충분한 암호화</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Insufficient Cryptography)	암호화 여부 뿐만 아니라 올바르지 않은 암호화 중요한 정보는 암호화 적용이 필요하며 TLS 또는 SSL관련해서는 M3에서 진행</p>
-<p class="tableblock">모바일 애플리케이션에 대한 암호화 미 적용은 M2 영역에 속함</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">안전하지 않은 권한 부여</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Insecure Authorization)	권한부여(예를 들어 이용자 측의 권한 결정, 강제 검색 등)에 대한 실패</p>
-<p class="tableblock">권한부여의 문제(예를 들어 장치 등록, 사용자 식별 등)와는 구별됨</p>
-<p class="tableblock">앱이 인증해야 하는 상황에서 사용자를 전혀 인증하지 않으면 (예 : 인증되고 승인 된 액세스가 필요할 때 일부 리소스 또는 서비스에 익명 액세스를 부여하는 경우) 인증 실패가 아닌 권한 부여 실패입니다.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">이용자 코드 품질</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Client Code Quality)	신뢰할 수 없는 입력을 통한 보안 결정</p>
-<p class="tableblock">모바일 클라이언트의 코드 수준 구현 문제에 대한 포괄적인 내용으로 이는 서버 측 코딩 실수와 구별됩니다. 이는 버퍼 오버 플로우, 형식 문자열 취약점 및 모바일 장치에서 실행되는 일부 코드를 다시 작성하는 코드 품질 실수와 같은 것들을 포함합니다</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">코드 변조 문제점</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Code Tampering)	바이너리 패치, 로컬 리소스 수정, 메서드 후킹, 메서드 변경 및 동적 메모리 변조 등을 포함</p>
-<p class="tableblock">응용 프로그램이 모바일 장치로 전달되면 코드 및 데이터 리소스가 해당 모바일 장치에 상주합니다. 공격자는 코드를 직접 수정하거나, 메모리 내용을 동적으로 변경하거나, 응용 프로그램이 사용하는 시스템 API를 변경하거나 대체하거나, 응용 프로그램의 데이터와 자원을 수정할 수 있습니다. 이것은 공격자에게 소프트웨어의 의도 된 사용을 개인적 또는 금전적 이득을 위해 전복시키는 직접적인 방법을 제공 할 수 있습니다.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M9</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">역공학</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Reverse Engineering)	소스 코드, 라이브러리, 알고리즘 및 기타 자산을 결정하는 최종 핵심 바이너리 분석을 포함</p>
-<p class="tableblock">IDA Pro, Hopper, otool 및 기타 이진 검사 도구와 같은 소프트웨어는 침입자가 응용 프로그램의 내부 동작을 파악할 수 있도록 합니다. 이는 백엔드 서버, 암호화 상수 및 암호 및 지적 재산에 대한 정보를 공개하는 것 외에도 응용 프로그램의 초기 취약점을 악용하는 데 사용될 수 있습니다.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">불필요한 기능</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Extraneous Functionality)	개발자는 숨겨진 백 도어 기능이나 개발환경에서 의도하지 않게 내부 개발 보안 문제에 포함될 수 있음</p>
-<p class="tableblock">예를 들어 개발자가 실수로 하이브리드 앱에 댓글로 비밀번호를 포함 할 수 있습니다. 또 다른 예는 테스트 중 2 요소 인증을 사용하지 못하도록 하는 것입니다.</p></td>
-</tr>
-</tbody>
-</table>
+	:source-highlighter: rouge
+:toc:
+:stem: latexmath
+:experimental:
+:icons: font
+:draft: false
+
+[cols=&#34;1,2,5&#34;]
+|===
+|번호	|취약점	|대응방안
+
+|M1	|부적절한 플랫폼의 사용
+|(Improper Platform Usage) 플랫폼 기능의 오용 또는 플랫폼 보안통제 미 적용으로 인해 발생하는 문제 
+
+Android intents*, 플랫폼 권한, TouchID의 오용, 키 체인 또는 모바일 운영 체제의 일부인 다른 보안 컨트롤을 포함 할 수 있습니다. 
+
+* 컴포넌트(Activity, Content Provider, Broadcast Receiver, Service) 간의 호출과 메시지 전달에 이용
+
+|M2 |안전하지 않은 데이터 저장
+|(Insecure Data Storage)	Top 10 Mobile Risk 2014에서 M2와 M4의 조합 
+
+안전하지 않은 데이터 저장 및 의도하지 않은 데이터 유출을 포함 합니다.
+
+|M3 |안전하지 않은 통신
+| (Insecure Communication)	세션성립을 위한 악의적인 핸드쉐이킹(handshaking), 잘못된 SSL 버전, 불완전한 연결, 민감한 정보의 평문 통신 등을 포함 합니다. 필요한 경우 사용자 신원 유지 실패
+
+|M4 |안전하지 않은 인증
+| (Insecure Authentication)	최종 사용자 또는 잘못된 세션 관리 인증의 개념을 포함 필요한 경우 사용자를 식별하지 못함
+
+필요한 경우 사용자를 식별하지 못함, 필요한 경우 사용자 신원 유지 실패, 세션 관리의 약점
+
+|M5	|불충분한 암호화
+| (Insufficient Cryptography)	암호화 여부 뿐만 아니라 올바르지 않은 암호화 중요한 정보는 암호화 적용이 필요하며 TLS 또는 SSL관련해서는 M3에서 진행
+
+모바일 애플리케이션에 대한 암호화 미 적용은 M2 영역에 속함
+
+|M6	|안전하지 않은 권한 부여
+|(Insecure Authorization)	권한부여(예를 들어 이용자 측의 권한 결정, 강제 검색 등)에 대한 실패
+
+권한부여의 문제(예를 들어 장치 등록, 사용자 식별 등)와는 구별됨
+
+앱이 인증해야 하는 상황에서 사용자를 전혀 인증하지 않으면 (예 : 인증되고 승인 된 액세스가 필요할 때 일부 리소스 또는 서비스에 익명 액세스를 부여하는 경우) 인증 실패가 아닌 권한 부여 실패입니다.
+
+|M7	|이용자 코드 품질
+|(Client Code Quality)	신뢰할 수 없는 입력을 통한 보안 결정
+
+모바일 클라이언트의 코드 수준 구현 문제에 대한 포괄적인 내용으로 이는 서버 측 코딩 실수와 구별됩니다. 이는 버퍼 오버 플로우, 형식 문자열 취약점 및 모바일 장치에서 실행되는 일부 코드를 다시 작성하는 코드 품질 실수와 같은 것들을 포함합니다
+
+|M8	|코드 변조 문제점
+|(Code Tampering)	바이너리 패치, 로컬 리소스 수정, 메서드 후킹, 메서드 변경 및 동적 메모리 변조 등을 포함
+
+응용 프로그램이 모바일 장치로 전달되면 코드 및 데이터 리소스가 해당 모바일 장치에 상주합니다. 공격자는 코드를 직접 수정하거나, 메모리 내용을 동적으로 변경하거나, 응용 프로그램이 사용하는 시스템 API를 변경하거나 대체하거나, 응용 프로그램의 데이터와 자원을 수정할 수 있습니다. 이것은 공격자에게 소프트웨어의 의도 된 사용을 개인적 또는 금전적 이득을 위해 전복시키는 직접적인 방법을 제공 할 수 있습니다.
+
+|M9	|역공학
+|(Reverse Engineering)	소스 코드, 라이브러리, 알고리즘 및 기타 자산을 결정하는 최종 핵심 바이너리 분석을 포함
+
+IDA Pro, Hopper, otool 및 기타 이진 검사 도구와 같은 소프트웨어는 침입자가 응용 프로그램의 내부 동작을 파악할 수 있도록 합니다. 이는 백엔드 서버, 암호화 상수 및 암호 및 지적 재산에 대한 정보를 공개하는 것 외에도 응용 프로그램의 초기 취약점을 악용하는 데 사용될 수 있습니다.
+
+|M10	|불필요한 기능
+|(Extraneous Functionality)	개발자는 숨겨진 백 도어 기능이나 개발환경에서 의도하지 않게 내부 개발 보안 문제에 포함될 수 있음
+
+예를 들어 개발자가 실수로 하이브리드 앱에 댓글로 비밀번호를 포함 할 수 있습니다. 또 다른 예는 테스트 중 2 요소 인증을 사용하지 못하도록 하는 것입니다.
+
+|===
 
 	
 	

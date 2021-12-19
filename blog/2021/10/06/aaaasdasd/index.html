@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.84.1" />
+<meta name="generator" content="Hugo 0.91.0" />
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -54,12 +54,12 @@
 <meta property="og:description" content="테스트입니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://urihanl.github.io/blog/2021/10/06/aaaasdasd/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-10-06T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-10-06T00:00:00&#43;00:00" /><meta property="og:site_name" content="공부노트" />
+<meta property="article:published_time" content="2021-10-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-06T00:00:00+00:00" /><meta property="og:site_name" content="공부노트" />
 
 <meta itemprop="name" content="hugo 사용하기">
-<meta itemprop="description" content="테스트입니다."><meta itemprop="datePublished" content="2021-10-06T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-10-06T00:00:00&#43;00:00" />
+<meta itemprop="description" content="테스트입니다."><meta itemprop="datePublished" content="2021-10-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-10-06T00:00:00+00:00" />
 <meta itemprop="wordCount" content="869">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="hugo 사용하기"/>
@@ -68,8 +68,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" as="style">
-<link href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
@@ -317,7 +317,7 @@
 	</header>
 	<h2 id="mathjax-설치">mathjax 설치</h2>
 <p>my_partial.js 를 만들어서 <code>/layout/partial/</code> 에 저장</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8f5902;font-style:italic">//  이전 버전
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8f5902;font-style:italic">//  이전 버전
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">script</span> <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;text/x-mathjax-config&#34;</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
   <span style="color:#000">MathJax</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Hub</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Config</span><span style="color:#000;font-weight:bold">({</span>
     <span style="color:#000">tex2jax</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
@@ -396,7 +396,7 @@
 </tbody>
 </table>
 <p>다른 툴들은 다음과 같다.</p>
-<pre><code>1. 'dollars' (default)
+<pre tabindex="0"><code>1. 'dollars' (default)
     * inline: $...$
     * display: $$...$$
     * display + equation number: $$...$$ (1)
@@ -418,16 +418,16 @@
     * display + equation number: $$...$$ (1)
 </code></pre><p>를 layout/partial 에 my_partial.html 로 저장</p>
 <p><code>head.html</code> 같은 곳에  <code>include</code> 시키면 됨.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000;font-weight:bold">{{</span> <span style="color:#000">partial</span> <span style="color:#4e9a06">&#34;my_partial.html&#34;</span> <span style="color:#000;font-weight:bold">.</span> <span style="color:#000;font-weight:bold">}}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000;font-weight:bold">{{</span> <span style="color:#000">partial</span> <span style="color:#4e9a06">&#34;my_partial.html&#34;</span> <span style="color:#000;font-weight:bold">.</span> <span style="color:#000;font-weight:bold">}}</span>
 </code></pre></div><p>반드시 asciidoc 에는 다음과 같이 있어야 함.</p>
-<pre><code>:stem:
+<pre tabindex="0"><code>:stem:
 </code></pre><h2 id="mermaid-적용하는-법">mermaid 적용하는 법</h2>
 <p><code>layouts/shortcodes/mermaid.html</code> 에 아래와 같이 해서 <code>shortcode</code>를 적용한다.</p>
-<pre><code>&lt;div class=&quot;mermaid&quot;&gt;
+<pre tabindex="0"><code>&lt;div class=&quot;mermaid&quot;&gt;
   {{.Inner}}
 &lt;/div&gt;
 </code></pre><p>그 다음</p>
-<pre><code><div class="mermaid">
+<pre tabindex="0"><code><div class="mermaid">
     
 graph TD;
   A-->B;
@@ -439,7 +439,7 @@ graph TD;
 </code></pre><p>이런식으로 써 주면 됨.</p>
 <h2 id="다국어-적용">다국어 적용</h2>
 <p>config.toml 을 설정</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#000;font-weight:bold">[</span><span style="color:#000">languages</span><span style="color:#000;font-weight:bold">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#000;font-weight:bold">[</span><span style="color:#000">languages</span><span style="color:#000;font-weight:bold">]</span>
   <span style="color:#000;font-weight:bold">[</span><span style="color:#000">languages</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">kr</span><span style="color:#000;font-weight:bold">]</span>
     <span style="color:#000">title</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;테스트입니다.&#34;</span>
     <span style="color:#000">description</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;김연우  테스트 사이트&#34;</span>
@@ -467,7 +467,7 @@ graph TD;
 <p><a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/</a> 의 내용임.</p>
 <p><code>which asciidotor</code> 해서 위치를 알아보고</p>
 <p><code>hugo</code> 프로젝트 디렉토리에 <code>./asciidoctor</code>를 만든다.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#8f5902;font-style:italic">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#8f5902;font-style:italic">#!/bin/bash
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;asciidoc test run2&#34;</span>
 
 
@@ -486,15 +486,15 @@ mkdir -p static/diagram
 <span style="color:#204a87;font-weight:bold">if</span> ls *.png &gt;/dev/null 2&gt;<span style="color:#000;font-weight:bold">&amp;</span>1<span style="color:#000;font-weight:bold">;</span> <span style="color:#204a87;font-weight:bold">then</span>
   mv -f *.png static/diagram
 <span style="color:#204a87;font-weight:bold">fi</span>
-</code></pre></div><pre><code># 실행가능한 파일로 만들어 줘야함.
+</code></pre></div><pre tabindex="0"><code># 실행가능한 파일로 만들어 줘야함.
 chmod +x ./asciidoctor
 # 현재 디렉토리의 파일을 우선적으로 부르도록하면서 hugo 실행
 PATH=$PWD:$PATH hugo server -D
 </code></pre><p>아니면 <code>bash</code> 에 아예 적용하기 위해 &lsquo;~/.bashrc`에 적용</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#000">PATH</span><span style="color:#ce5c00;font-weight:bold">=</span>/projecet/directory:<span style="color:#000">$PATH</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#000">PATH</span><span style="color:#ce5c00;font-weight:bold">=</span>/projecet/directory:<span style="color:#000">$PATH</span>
 <span style="color:#204a87">export</span>
 </code></pre></div><p>admonition block 을 바꾸기 위해 아래와 같이 적용한다.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000">fix</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">adoc</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">js</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000">fix</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">adoc</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">js</span>
 <span style="color:#8f5902;font-style:italic">// replace the default admonitions block with one that looks like the antora output to apply similar styling via adoc.css
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87">window</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;load&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
   <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">admonitions</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByClassName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;admonition-block&#39;</span><span style="color:#000;font-weight:bold">)</span>
@@ -525,7 +525,7 @@ PATH=$PWD:$PATH hugo server -D
 <span style="color:#000;font-weight:bold">})</span>
 </code></pre></div><hr>
 <p>.adoc 문서 상단에</p>
-<pre><code class="language-asciidoc" data-lang="asciidoc">+++
+<pre tabindex="0"><code class="language-asciidoc" data-lang="asciidoc">+++
 title = &quot;Goldydocs2&quot;
 linkTitle = &quot;Goldydocs2&quot;
 +++
@@ -536,20 +536,20 @@ linkTitle = &quot;Goldydocs2&quot;
 <p>다운 받아서 프로젝트 root에 ( asciidoctor 스크립트와 같은 위치)에
 놓고 adoc 파일에서 <code>:stylesheet: ubuntu.css</code>를 추가한다.</p>
 <p>adoc과 bootstrap의 간극을 좁히기 위해 두가지 첨부함.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#204a87;font-weight:bold">ul</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">td-sidebar-nav__section</span><span style="color:#000;font-weight:bold">{</span><span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#000;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">0.0</span><span style="color:#204a87;font-weight:bold">em</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">line-height</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">24</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#204a87;font-weight:bold">ul</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">td-sidebar-nav__section</span><span style="color:#000;font-weight:bold">{</span><span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#000;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">0.0</span><span style="color:#204a87;font-weight:bold">em</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">line-height</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">24</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">}</span>
 
 </code></pre></div><p>gem 에서 추가 설치 할 것 : rouge asciidoctor-diagram</p>
 <p>assets/scss/<em>variables_project</em>.scss 에 추가함.</p>
-<pre><code>@import 'asciidoctor.scss';
+<pre tabindex="0"><code>@import 'asciidoctor.scss';
 </code></pre><p>asciidoctor.scss 를 만들어서 추가함.</p>
 <p>또는</p>
-<pre><code>[params]
+<pre tabindex="0"><code>[params]
     # Custom CSS
     custom_css = [&quot;css/molokai.css&quot;,&quot;css/custom.css&quot;]
 </code></pre><ul>
 <li>설치할 것</li>
 </ul>
-<pre><code>apt install asciidoctor
+<pre tabindex="0"><code>apt install asciidoctor
 gem install asciidoctor-html5s
 gem install asciidoctor-diagram
 apt install default-jdk
@@ -557,7 +557,7 @@ apt-get install graphviz
 </code></pre><ul>
 <li>config.toml 에 asciidoc 설정이 생김.</li>
 </ul>
-<pre><code>  [markup.asciidocext]
+<pre tabindex="0"><code>  [markup.asciidocext]
     extensions =  [&quot;asciidoctor-diagram&quot;,&quot;asciidoctor-html5s&quot;]
     workingFolderCurrent = true
     trace = true
@@ -600,7 +600,7 @@ sudo apt -qq -y install bison flex libffi-dev libxml2-dev libgdk-pixbuf2.0-dev l
 해줘야 함.</p>
 <h2 id="css-수정">css 수정</h2>
 <p><a href="https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css">https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css</a> 를 다운 받음.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#204a87;font-weight:bold">ul</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">ol</span><span style="color:#000;font-weight:bold">{</span><span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#000;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">1.5</span><span style="color:#204a87;font-weight:bold">em</span><span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#204a87;font-weight:bold">ul</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">ol</span><span style="color:#000;font-weight:bold">{</span><span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#000;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">1.5</span><span style="color:#204a87;font-weight:bold">em</span><span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><p>를 제거함.</p>
 <h2 id="asciidoc-에서-toc-사용">asciidoc 에서 toc 사용</h2>
 <pre><code>    &quot;toc&quot; = &quot;&quot;

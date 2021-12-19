@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.84.1" />
+<meta name="generator" content="Hugo 0.91.0" />
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -63,7 +63,7 @@
 <meta itemprop="description" content="금융감독원의 연계 기관인 금융보안연구원에서 2014년 6월에 발표한 스마트폰 전자금융서비스 보안가이드 항목입니다. 하기 표는 개인정보보보호법과 정보통신망법을 함께 포괄한 보안 약점 진단 항목을 나열합니다.
 ">
 
-<meta itemprop="wordCount" content="325">
+<meta itemprop="wordCount" content="347">
 <meta itemprop="keywords" content="," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="스마트폰 전자금융서비스 보안가이드"/>
 <meta name="twitter:description" content="금융감독원의 연계 기관인 금융보안연구원에서 2014년 6월에 발표한 스마트폰 전자금융서비스 보안가이드 항목입니다. 하기 표는 개인정보보보호법과 정보통신망법을 함께 포괄한 보안 약점 진단 항목을 나열합니다.
@@ -72,8 +72,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" as="style">
-<link href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
@@ -416,88 +416,115 @@
 		
 		
 	</header>    
-	<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;"/>
-<col style="width: 85.7143%;"/>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-center valign-top">영역</th>
-<th class="tableblock halign-center valign-top">점검사항</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">스마트폰</p>
-<p class="tableblock">금융</p>
-<p class="tableblock">보안대책</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1. 백신프로그램 적용</p>
-<p class="tableblock">	▶ 앱 실행 시 백신프로그램 구동</p>
-<p class="tableblock">※ 안드로이드 운영체제를 탑재한 스마트폰의 경우 해당</p>
-<p class="tableblock">	▶ 백신 프로그램 업데이트</p>
-<p class="tableblock">※안드로이드 운영체제를 탑재한 스마트폰의 경우 해당</p>
-<p class="tableblock">  - 해당 금융회사에서 제공하는 공개된 최신버전 (설치 후 버전 확인)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2. 입력정보 보호대책 적용 여부</p>
-<p class="tableblock">	▶ 주요 금융정보 대상 (기밀성 대상) : 계좌비밀번호, 공인인증서 비밀번호 등</p>
-<p class="tableblock">	▶ 해당 필드 클릭 시 가상키패드 등 활성화 및 키패드 위치 변화 여부</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. 주요 금융정보 종단간 암호화 적용 여부</p>
-<p class="tableblock">	▶ 주요 금융정보 대상(기밀성 대상) : 계좌번호, 계좌 비밀번호, 금액 등</p>
-<p class="tableblock">	▶ 종단간 암호화 : 앱(또는 가상키패드)으로부터 서버 간 암호화 유지 여부</p>
-<p class="tableblock">예) 앱에서 암호화 하고 서버에서 복호화 (통신사 등에서 복호화 금지)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4. 거래전문 무결성 검증 기법</p>
-<p class="tableblock">	▶ 표준 보안프로토콜(SSO, HMAC 등)</p>
-<p class="tableblock">* HMAC : Keyed-Hashing for Message Authentication Code)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">앱 위·변조</p>
-<p class="tableblock">방지대책</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5. 폰 임의개조 탐지 및 차단</p>
-<p class="tableblock">	▶ 임의 개조폰에서 앱 실행 시 종료여부</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6. 중요 파일 무결성 검증기술 적용</p>
-<p class="tableblock">	▶ 주요 검증대상 파일을 변조 후, 앱을 실행하여 정상적으로 서비스 이용 가능 혹은 제한여부 확인</p>
-<p class="tableblock">- 적용된 앱 무결성 검증기술의 특성에 따라 변조대상을 선별하여 점검 진행</p>
-<p class="tableblock">	▶ 주요파일 무결성 검증 대상</p>
-<p class="tableblock">- 안드로이드 : 설치파일, 실행파일, 리소스파일(Xml, 이미지 등) 등</p>
-<p class="tableblock">▶ 주요파일 무결성 검증 방법</p>
-<p class="tableblock">- 안드로이드 : 설치파일 다운로드→파일 변조→스마트폰에 주입 및 설치→ 앱 실행후 정상적으로 서비스 이용/제한 여부 확인</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7. 코드(모듈) 보호</p>
-<p class="tableblock">	▶ 코드보호 기술 적용</p>
-<p class="tableblock">- 난독화, 암호화 등 코드보호 기술 적용 여부</p>
-<p class="tableblock">	▶ 네이티브 라이브러리 구현</p>
-<p class="tableblock">- JAVA가 아닌 해독이 어려운 네이티브 라이브러리로 앱 구현 여부</p>
-<p class="tableblock">	▶ 코드/모듈 업데이트</p>
-<p class="tableblock">- 앱 코드(모듈)에 자동업데이트 기능이 내장되어 위·변조 앱에서 접속시 자동 업데이트 적용 여부</p>
-<p class="tableblock">	▶ 기타</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">기타</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8. 앱취약점 점검</p>
-<p class="tableblock">	▶ 앱에 보안기능 및 위·변조 방지모듈에 취약점 점검을 자체 또는 전문기관 위탁 실시 여부</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9. 위·변조 앱 모니터링</p>
-<p class="tableblock">	▶ 블랙마켓 등에서 유통되는 위·변조 앱에 대한 자체 또는 위탁 모니터링 및 발견시 대응 여부</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10. 앱 위·변조 로그 기록</p>
-<p class="tableblock">	▶ 임의 개조된 폰에서 접속 시도시 로그기록 보관 여부</p>
-<p class="tableblock">	▶ 위·변조 앱에서 접속 시도시 로그기록 보관 여부</p>
-<p class="tableblock">※보관 항목 : 이용자ID, 접속일시, HMAC코드, 전화번호, 휴대폰정보 등</p></td>
-</tr>
-</tbody>
-</table>
+	:source-highlighter: rouge
+:toc:
+:stem: latexmath
+:experimental:
+:icons: font
+:draft: false
 
+
+
+[cols=&#34;1,6&#34;,options=header]
+|===
+^|영역	^|점검사항
+
+.4+|스마트폰
+
+금융
+
+보안대책	
+
+|1. 백신프로그램 적용  
+
+	▶ 앱 실행 시 백신프로그램 구동
+
+※ 안드로이드 운영체제를 탑재한 스마트폰의 경우 해당
+
+	▶ 백신 프로그램 업데이트
+
+※안드로이드 운영체제를 탑재한 스마트폰의 경우 해당
+
+  - 해당 금융회사에서 제공하는 공개된 최신버전 (설치 후 버전 확인)
+
+|	2. 입력정보 보호대책 적용 여부
+
+	▶ 주요 금융정보 대상 (기밀성 대상) : 계좌비밀번호, 공인인증서 비밀번호 등
+
+	▶ 해당 필드 클릭 시 가상키패드 등 활성화 및 키패드 위치 변화 여부
+
+|	3. 주요 금융정보 종단간 암호화 적용 여부
+
+	▶ 주요 금융정보 대상(기밀성 대상) : 계좌번호, 계좌 비밀번호, 금액 등
+
+	▶ 종단간 암호화 : 앱(또는 가상키패드)으로부터 서버 간 암호화 유지 여부 
+
+예) 앱에서 암호화 하고 서버에서 복호화 (통신사 등에서 복호화 금지)
+
+|	4. 거래전문 무결성 검증 기법
+
+	▶ 표준 보안프로토콜(SSO, HMAC 등)
+
+* HMAC : Keyed-Hashing for Message Authentication Code)
+
+.3+| 앱 위·변조
+
+방지대책	
+
+| 5. 폰 임의개조 탐지 및 차단
+
+	▶ 임의 개조폰에서 앱 실행 시 종료여부
+
+|	6. 중요 파일 무결성 검증기술 적용
+
+	▶ 주요 검증대상 파일을 변조 후, 앱을 실행하여 정상적으로 서비스 이용 가능 혹은 제한여부 확인
+
+- 적용된 앱 무결성 검증기술의 특성에 따라 변조대상을 선별하여 점검 진행
+
+	▶ 주요파일 무결성 검증 대상
+
+- 안드로이드 : 설치파일, 실행파일, 리소스파일(Xml, 이미지 등) 등
+
+▶ 주요파일 무결성 검증 방법
+
+- 안드로이드 : 설치파일 다운로드-&gt;파일 변조-&gt;스마트폰에 주입 및 설치-&gt; 앱 실행후 정상적으로 서비스 이용/제한 여부 확인
+
+|	7. 코드(모듈) 보호
+
+	▶ 코드보호 기술 적용
+
+- 난독화, 암호화 등 코드보호 기술 적용 여부
+
+	▶ 네이티브 라이브러리 구현
+
+- JAVA가 아닌 해독이 어려운 네이티브 라이브러리로 앱 구현 여부
+
+	▶ 코드/모듈 업데이트
+
+- 앱 코드(모듈)에 자동업데이트 기능이 내장되어 위·변조 앱에서 접속시 자동 업데이트 적용 여부
+
+	▶ 기타
+
+.3+|기타	
+
+|8. 앱취약점 점검
+
+	▶ 앱에 보안기능 및 위·변조 방지모듈에 취약점 점검을 자체 또는 전문기관 위탁 실시 여부
+
+|	9. 위·변조 앱 모니터링
+
+	▶ 블랙마켓 등에서 유통되는 위·변조 앱에 대한 자체 또는 위탁 모니터링 및 발견시 대응 여부
+
+|	10. 앱 위·변조 로그 기록
+
+	▶ 임의 개조된 폰에서 접속 시도시 로그기록 보관 여부
+
+	▶ 위·변조 앱에서 접속 시도시 로그기록 보관 여부
+
+※보관 항목 : 이용자ID, 접속일시, HMAC코드, 전화번호, 휴대폰정보 등
+
+
+|===
 	
 	
 	
