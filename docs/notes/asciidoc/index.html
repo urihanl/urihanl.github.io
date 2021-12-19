@@ -50,7 +50,9 @@
 
 
   
-  <meta name="description" content="Welcome to the Docsy theme user guide!   This guide shows you how to get started creating technical documentation sites using Docsy, including site …">
+  <meta name="description" content="
+
+Welcome to the Docsy theme user guide!   This guide shows you how to get started creating technical documentation sites using Docsy, including site …">
 <meta property="og:title" content="asciidoc" />
 <meta property="og:description" content="공부노트" />
 <meta property="og:type" content="website" />
@@ -64,8 +66,8 @@
 
 
 
-<link rel="preload" href="/scss/main.scss" as="style">
-<link href="/scss/main.scss" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" as="style">
+<link href="/scss/main.min.84b23e64d6c5bd3875c2ca3b8d868947646aaab710ff0fdba9d56b975b15caae.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -321,6 +323,14 @@
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#_what_is_docsy">What is Docsy?</a></li>
+    <li><a href="#_is_docsy_for_me">Is Docsy for me?</a></li>
+    <li><a href="#_ready_to_get_started">Ready to get started?</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -407,42 +417,75 @@
 		
 		
 	</header>
-	Welcome to the Docsy theme user guide!   This guide shows you how to get started creating technical documentation sites using Docsy, including site customization and how to use Docsy&#39;s blocks and templates.
-
-## What is Docsy?
-
-Docsy is a theme for the [Hugo](https://gohugo.io/) static site generator that&#39;s specifically designed for technical 
-documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation 
-site up and running fast, and then get back to focusing on great content for your users. 
-[Learn more about Docsy](/about).  
-
-In addition to the theme itself, we provide an [example site](https://github.com/google/docsy-example) that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you&#39;re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &#34;big&#34; example.
-
-Docsy itself does **not** provide:
-
-* **Source hosting and management**: Our theme and site source files live on [GitHub](https://github.com/), which is the simplest approach for most projects. However, you can also keep your project files in [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/product), locally, or wherever you like. Be aware that where your source files live may affect the Docsy features you can use (such as letting users file documentation issues) and site deployment options.
-* **Site deployment**: You can find out about deployment options in [Previews and Deployment](./deployment/). This site uses [Netlify](https://www.netlify.com/). 
-
-Docsy also doesn&#39;t actually generate your site&#39;s HTML files: that&#39;s Hugo&#39;s job! Hugo takes your Markdown or HTML doc source files and Docsy&#39;s theme files and builds them into a static site for deployment. You can find out more about Hugo and how it works in the [Hugo documentation](https://gohugo.io/documentation/).
-
-## Is Docsy for me?
-
-Docsy is particularly useful for medium to large technical documentation sets with 20+ pages of docs and/or multiple types of docs and pages: tutorials, reference documentation, blog posts, community pages, and so on.
-
-If you have a smaller project with only a couple of pages of documentation and hence simpler navigation needs, Docsy may be too heavyweight a solution for you. Instead, consider:
-
-* A simpler Hugo or Jekyll theme: find out what&#39;s available in Github Pages&#39; [built-in Jekyll options](https://pages.github.com/themes/) and the [Hugo theme gallery](https://themes.gohugo.io/).
-* A good README file that tells users what your project does and links to some examples.
-
-If you have a very large documentation project, our example site structure may not be sufficient either, though you can still use our theme, possibly with heavier customization.
-
-If you&#39;d like to use Docsy&#39;s layouts but prefer to use Jekyll, [vsoch](https://github.com/vsoch) has created a [Docsy Jekyll port](https://github.com/vsoch/docsy-jekyll) that includes many of Docsy&#39;s features (though as this is a separate project it won&#39;t be automatically updated along with Docsy).
-
-## Ready to get started?
-
-Find out how to build and serve your first site in [Getting Started](./getting-started/). Or visit the [example site](https://example.docsy.dev) and [its repo](https://github.com/google/docsy-example) and start exploring!
-
-
+	
+<div class="paragraph">
+<p>Welcome to the Docsy theme user guide!   This guide shows you how to get started creating technical documentation sites using Docsy, including site customization and how to use Docsy’s blocks and templates.</p>
+</div>
+<div class="sect1">
+<h2 id="_what_is_docsy">What is Docsy?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Docsy is a theme for the [Hugo](<a href="https://gohugo.io/" class="bare">https://gohugo.io/</a>) static site generator that’s specifically designed for technical
+documentation sets and has a lot of best practices built in. Use Docsy to get a working and reliable documentation
+site up and running fast, and then get back to focusing on great content for your users.
+[Learn more about Docsy](/about).</p>
+</div>
+<div class="paragraph">
+<p>In addition to the theme itself, we provide an [example site](<a href="https://github.com/google/docsy-example" class="bare">https://github.com/google/docsy-example</a>) that uses lots of Docsy features and has a useful skeleton site structure (with advice for what to put in it!) for a large technical documentation set. You can copy the entire site and edit it for your own projects, or just explore the site and its source to see what Docsy can do. The site you’re currently reading also uses Docsy and is a useful example of a smaller Docsy docset: feel free to copy it or borrow from it if it suits your needs better than the &#34;big&#34; example.</p>
+</div>
+<div class="paragraph">
+<p>Docsy itself does <strong>not</strong> provide:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Source hosting and management</strong>: Our theme and site source files live on [GitHub](<a href="https://github.com/" class="bare">https://github.com/</a>), which is the simplest approach for most projects. However, you can also keep your project files in [GitLab](<a href="https://about.gitlab.com/" class="bare">https://about.gitlab.com/</a>), [BitBucket](<a href="https://bitbucket.org/product" class="bare">https://bitbucket.org/product</a>), locally, or wherever you like. Be aware that where your source files live may affect the Docsy features you can use (such as letting users file documentation issues) and site deployment options.</p>
+</li>
+<li>
+<p><strong>Site deployment</strong>: You can find out about deployment options in [Previews and Deployment](./deployment/). This site uses [Netlify](<a href="https://www.netlify.com/" class="bare">https://www.netlify.com/</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Docsy also doesn’t actually generate your site’s HTML files: that’s Hugo’s job! Hugo takes your Markdown or HTML doc source files and Docsy’s theme files and builds them into a static site for deployment. You can find out more about Hugo and how it works in the [Hugo documentation](<a href="https://gohugo.io/documentation/" class="bare">https://gohugo.io/documentation/</a>).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_is_docsy_for_me">Is Docsy for me?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Docsy is particularly useful for medium to large technical documentation sets with 20+ pages of docs and/or multiple types of docs and pages: tutorials, reference documentation, blog posts, community pages, and so on.</p>
+</div>
+<div class="paragraph">
+<p>If you have a smaller project with only a couple of pages of documentation and hence simpler navigation needs, Docsy may be too heavyweight a solution for you. Instead, consider:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A simpler Hugo or Jekyll theme: find out what’s available in Github Pages&#39; [built-in Jekyll options](<a href="https://pages.github.com/themes/" class="bare">https://pages.github.com/themes/</a>) and the [Hugo theme gallery](<a href="https://themes.gohugo.io/" class="bare">https://themes.gohugo.io/</a>).</p>
+</li>
+<li>
+<p>A good README file that tells users what your project does and links to some examples.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you have a very large documentation project, our example site structure may not be sufficient either, though you can still use our theme, possibly with heavier customization.</p>
+</div>
+<div class="paragraph">
+<p>If you’d like to use Docsy’s layouts but prefer to use Jekyll, [vsoch](<a href="https://github.com/vsoch" class="bare">https://github.com/vsoch</a>) has created a [Docsy Jekyll port](<a href="https://github.com/vsoch/docsy-jekyll" class="bare">https://github.com/vsoch/docsy-jekyll</a>) that includes many of Docsy’s features (though as this is a separate project it won’t be automatically updated along with Docsy).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ready_to_get_started">Ready to get started?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Find out how to build and serve your first site in [Getting Started](./getting-started/). Or visit the [example site](<a href="https://example.docsy.dev" class="bare">https://example.docsy.dev</a>) and [its repo](<a href="https://github.com/google/docsy-example" class="bare">https://github.com/google/docsy-example</a>) and start exploring!</p>
+</div>
+</div>
+</div>
 
         <div class="section-index">
     

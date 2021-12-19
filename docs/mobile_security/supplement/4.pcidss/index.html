@@ -63,7 +63,7 @@
 <meta itemprop="description" content="지불 카드 산업 데이터 보안 표준(Payment Card Industry Data Security Standard, PCI DSS), 지불 카드 보안 표준, 결제카드 산업정보보안표준, 지불 카드 업계 데이터 보안 표준은 주요 카드 스킴의 유명 상표의 신용카드를 관리하는 조직을 위한 정보 보안 표준입니다.
 ">
 
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="238">
 <meta itemprop="keywords" content="," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="PCI DSS 표준"/>
 <meta name="twitter:description" content="지불 카드 산업 데이터 보안 표준(Payment Card Industry Data Security Standard, PCI DSS), 지불 카드 보안 표준, 결제카드 산업정보보안표준, 지불 카드 업계 데이터 보안 표준은 주요 카드 스킴의 유명 상표의 신용카드를 관리하는 조직을 위한 정보 보안 표준입니다.
@@ -329,6 +329,8 @@
             
 
 
+
+
             
 
 	
@@ -414,7 +416,68 @@
 		
 		
 	</header>    
-	
+	<div class="paragraph">
+<p>PCI 표준은 카드 브랜드에 의무화되어 있으나 지불 카드 산업 보안 표준 협의회에 의해 관리되지는 않는다. 이 표준은 카드 홀더 데이터의 제어권을 증가시켜 신용 카드 사기를 줄이기 위해 만들어졌다. 준수 여부의 검증은 1년에 한 차례 또는 분기별로 수행되며, 외부 인증 보안 평가자(Qualified Security Assessor, QSA)에 의해서, 또는 대량의 거래를 관리하는 조직을 위한 준수 보고서를 작성하는, 회사에 특화된 내부 보안 평가자(Internal Security Assessor, ISA)에 의해서, 또는 더 작은 규모의 거래를 관리하는 기업들을 대상으로는 자기평가문항(Self-Assessment Questionnaire, SAQ)을 통해서 이루어진다.
+PCI DSS 인증은 하기와 같은 12개의 범위와 매년 추가 반영된 요구사항을 심사하는데, 전반적인 정책에서부터 구체적인 사항까지 버전 3.1에서는 기본 405개 항목과 추가 항목 9개를 포함하여 총 414개의 항목을 검토합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. PCI DSS 표준 개요 (PCI DSS 버전 3.1 기준)</caption>
+<colgroup>
+<col style="width: 14.2857%;"/>
+<col style="width: 85.7143%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">항목</th>
+<th class="tableblock halign-left valign-top">요구 사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">보안 네트워크 구축 및 유지</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">카드 소유자 데이터 보호를 위한 침입차단시스템 구성을 설치 및 유지합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">시스템 패스워드 및 기타 보안 매개변수에 벤더가 제공한 기본값을 사용하지 않는다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">카드 소유자 데이터 보호</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">저장된 카드 소유자 데이터를 보호합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">개방된 공용 네트워크에서 카드 소유자 데이터의 전송을 암호화 합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">취약점 관리 프로그램 유지</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">악성코드로부터 모든 시스템을 보호하고 안티바이러스 소프트웨어를 정기적으로 업데이트 합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">안전한 시스템과 애플리케이션을 개발하고 유지합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">강력한 접근 통제 방안 수립</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">업무상 알 필요가 있는지에 따라 카드소유자 데이터에 대한 접근을 제한합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">시스템 구성요소 접근 시 식별 및 인증을 수행합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">카드소유자 데이터에 대한 물리적 접근을 제한합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">정기적인 네트워크 모니터링과 테스트</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">네트워크 자원 및 카드소유자 데이터에 대한 모든 접근을 추적하고 모니터링합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">보안시스템 및 프로세스를 정기적으로 테스트합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">정보보호 정책의 유지</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">모든 사용자에 대한 정보보호 정책을 유지합니다.</p></td>
+</tr>
+</tbody>
+</table>
+
 	
 	
 	
